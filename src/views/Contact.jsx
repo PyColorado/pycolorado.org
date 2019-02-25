@@ -26,7 +26,7 @@ const InnerWave = styled.div`
 
 const Contact = ({ children, offset }) => (
   <>
-    <Divider fill="#23262b" speed={0.2} offset={offset}>
+    <Divider fill="#23262b">
       <WaveWrapper>
         <InnerWave>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 338.05" preserveAspectRatio="none">
@@ -42,10 +42,8 @@ const Contact = ({ children, offset }) => (
         </InnerWave>
       </WaveWrapper>
     </Divider>
-    <Content speed={0.4} offset={offset}>
-      {children}
-    </Content>
-    <Divider speed={0.1} offset={offset}>
+    <Content>{children}</Content>
+    <Divider>
       <UpDown>
         <SVG icon="upDown" hiddenMobile width={8} fill={colors['grey-darkest']} left="70%" top="20%" />
         <SVG icon="triangle" width={8} stroke={colors['grey-darkest']} left="25%" top="5%" />

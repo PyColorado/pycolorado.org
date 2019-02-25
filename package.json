@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-portfolio-cara",
+  "name": "pycolorado.org",
   "description": "Playful & Colorful One-Page website with Parallax effect powered by react-spring, TailwindCSS.",
   "version": "3.0.0",
-  "author": "LekoArts <hello@lekoarts.de> (https://www.lekoarts.de)",
+  "author": "PyColorado <hello@pycolorado.org> (https://pycolorado.org)",
   "license": "MIT",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
@@ -25,14 +25,9 @@
     "styled-components": "^4.1.3",
     "tailwind.macro": "^0.5.10",
     "tailwindcss": "^0.7.4",
-    "typeface-cantata-one": "^0.0.54",
-    "typeface-open-sans": "^0.0.54"
+    "typeface-halant": "^0.0.71",
+    "typeface-nunito-sans": "^0.0.54"
   },
-  "keywords": [
-    "gatsby",
-    "starter",
-    "portfolio"
-  ],
   "scripts": {
     "dev": "gatsby develop -o -p 8080",
     "develop": "gatsby develop",

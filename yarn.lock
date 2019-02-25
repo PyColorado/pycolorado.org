@@ -10962,13 +10962,15 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeface-cantata-one@^0.0.54:
-  version "0.0.54"
-  resolved "https://registry.yarnpkg.com/typeface-cantata-one/-/typeface-cantata-one-0.0.54.tgz#5442843224cca606a76d0fdc97a6dffb13c11a70"
+typeface-halant@^0.0.71:
+  version "0.0.71"
+  resolved "https://registry.yarnpkg.com/typeface-halant/-/typeface-halant-0.0.71.tgz#069ef383368c8a279235d37d45f7fe0f7e078ef7"
+  integrity sha512-po9zhTy5abrcq83Ic6IHup9Z1dSRSnHI8czs8kMKEDWWg/2imSKDbH3z2r/NGYy/uLi1cyNDxs8YHXMt70co2A==
 
-typeface-open-sans@^0.0.54:
+typeface-nunito-sans@^0.0.54:
   version "0.0.54"
-  resolved "https://registry.yarnpkg.com/typeface-open-sans/-/typeface-open-sans-0.0.54.tgz#20f5b5ea5c7f95d89dc1f8b2d2b1457680129cee"
+  resolved "https://registry.yarnpkg.com/typeface-nunito-sans/-/typeface-nunito-sans-0.0.54.tgz#d8960f5a9c733d8a0f7509bd9c32e69c20d4d19d"
+  integrity sha512-M1ffFL3AOqtBoiFjFqdeia2UjeWJYnT1BLykQ4j1CqwQS2mGVyQQaw6f5tlFtn0Z003jkNLp/hEGEDcP4EyBOA==
 
 ua-parser-js@^0.7.18:
   version "0.7.19"
