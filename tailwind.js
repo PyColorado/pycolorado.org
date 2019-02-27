@@ -58,6 +58,7 @@ const colors = {
   'grey-lighter': '#f3f7f9',
   'grey-lightest': '#fafcfc',
   white: '#ffffff',
+  'alt-white': '#fffff6',
 
   'red-darkest': '#420806',
   'red-darker': '#6a1b19',

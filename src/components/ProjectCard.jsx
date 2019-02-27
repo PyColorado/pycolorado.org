@@ -3,14 +3,30 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
 
-const Wrapper = styled.a`
+const Wrapper = styled.div`
   ${tw`relative no-underline px-8 py-4 md:py-24 text-white`};
   background: ${props => props.bg};
-  border: solid 5px #1f506e;
+  border: solid 5px #fffff6;
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   &:hover {
     ${tw`shadow-lg`};
-    transform: translateY(-5px);
+    border: solid 5px #1f506e;
+    transform: translateY(-1px);
+    transition: all 250ms ease-in;
+  }
+
+  a {
+    color: #1f506e;
+    border-bottom: 2px dotted #1f506e;
+    font-weight: 700;
+  }
+
+  a:hover {
+    border-bottom: 2px dotted transparent;
+  }
+
+  a:before {
+    background-color: #1f506e;
   }
 `
 
@@ -24,7 +40,7 @@ const Text = styled.div`
 `
 
 const ProjectCard = ({ title, link, children, bg }) => (
-  <Wrapper href={link} target="_blank" rel="noopener noreferrer" bg={bg}>
+  <Wrapper bg={bg}>
     <Title>{title}</Title>
     <Text>{children}</Text>
   </Wrapper>

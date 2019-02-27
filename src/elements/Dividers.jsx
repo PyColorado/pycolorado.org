@@ -8,6 +8,7 @@ export const Divider = styled.div`
     fill: ${props => props.fill};
   }
   clip-path: ${props => props.clipPath};
+  ${props => (props.height ? `height : ${props.height}` : null)};
 `
 
 export const DividerMiddle = styled(Divider)`

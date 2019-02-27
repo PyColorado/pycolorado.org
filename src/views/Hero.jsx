@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
 import Content from '../elements/Content'
-import bg from '../images/hero-bg.jpg'
+import bg from '../images/hero-bg.svg'
 
 const Wrapper = styled.div`
   ${tw`w-full -mt-64 xl:w-2/3 md:p-24 lg:p-32`};
@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 
 const Hero = ({ children }) => (
   <>
-    <Content bg={`url(${bg})`}>
+    <Content bg={`#fffff6 url(${bg}) no-repeat center center; background-size: cover;`}>
       <Wrapper>{children}</Wrapper>
     </Content>
   </>
