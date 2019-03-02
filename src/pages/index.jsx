@@ -101,7 +101,7 @@ const Index = () => (
         </ProjectCard>
 
         <ProjectCard title="Speak at PyColorado" link="" bg="white">
-          Our Call for Proposals is open from March 4 through May 9th. We're excepting submissions for Talks, Tutorial
+          Our Call for Proposals is open from March 4 through May 9th. We're accepting submissions for Talks, Tutorial
           Workshops, and Lightning Talks!
           <ProjectLinks>
             <a href="https://www.papercall.io/pycolorado">Submit via our CFP</a>
@@ -122,7 +122,7 @@ const Index = () => (
       <AboutTitle>About PyColorado</AboutTitle>
       <AboutDesc>
         PyColorado is a regional Python conference to bring together the community of Python users and developers in the
-        Front Range region of the Rocky Mountains.. Python is a popular open-source programming language with many users
+        Front Range region of the Rocky Mountains. Python is a popular open-source programming language with many users
         in this region, including many organizations and companies who rely on the language in their technology stack.
         Despite rapid growth and increasing prominence of the Rocky Mountain region in the technology world it has been
         historically underserved with opportunities for collaboration and education, a problem this conference seeks to
@@ -136,7 +136,7 @@ const Index = () => (
         interest.
         <br />
         <br />
-        Questions? Say Hello: <a href="mailto:hello@pycolorado.org">hello@pycolorado.org</a>
+        Questions? Email us at <a href="mailto:hello@pycolorado.org">hello@pycolorado.org</a>
       </AboutDesc>
     </About>
 
