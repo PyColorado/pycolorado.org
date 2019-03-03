@@ -9,14 +9,13 @@ import Wordmark from '../components/Logo'
 
 // Elements
 import Inner from '../elements/Inner'
-import { Title, Subtitle } from '../elements/Titles'
+import { Subtitle } from '../elements/Titles'
 
 // Views
 import Hero from '../views/Hero'
 import Projects from '../views/Projects'
 import About from '../views/About'
 import Contact from '../views/Contact'
-import { Divider } from '../elements/Dividers';
 
 const ProjectsWrapper = styled.div`
   ${tw`flex flex-wrap justify-between mt-16`};
@@ -85,34 +84,36 @@ const Index = () => (
 
     <Projects>
       <ProjectsWrapper>
-        <ProjectCard title="Sponsorships" link="" bg="white">
+        <ProjectCard title="Sponsor" link="" bg="white">
           PyColorado is a community driven event made possible by the generosity of our sponsors! There are a few
           sponsor levels remaining. If you, or your company are interested in supporting conferences like PyColorado,
           please get in touch with us today!
           <ProjectLinks>
-            <a href="#">Corporate Sponsorship Prospectus (PDF)</a>{' '}
-            <a href="#">Community Sponsorship Prospectus (PDF)</a>
+            <a href="#">Sponsorship Prospectus (PDF)</a>
           </ProjectLinks>
         </ProjectCard>
 
-        <ProjectCard title="Buy Tickets" link="" bg="white">
+        <ProjectCard title="Attend" link="" bg="white">
           Ready to start your journey to PyColorado? Well, grab your trekking poles, fill your Nalgenes, and lace up
           your boots!
+          <ProjectLinks>
+            <a href="https://ti.to/pycolorado/pycolorado-2019" target="_blank">Purchase Tickets</a>
+          </ProjectLinks>
         </ProjectCard>
 
-        <ProjectCard title="Speak at PyColorado" link="" bg="white">
+        <ProjectCard title="Speak" link="" bg="white">
           Our Call for Proposals is open from March 4 through May 9th. We're accepting submissions for Talks, Tutorial
           Workshops, and Lightning Talks!
           <ProjectLinks>
-            <a href="https://www.papercall.io/pycolorado">Submit via our CFP</a>
+            <a href="https://www.papercall.io/pycolorado" target="_blank">Submit via our CFP</a>
           </ProjectLinks>
         </ProjectCard>
 
-        <ProjectCard title="Volunteer at PyColorado" link="" bg="white">
+        <ProjectCard title="Volunteer" link="" bg="white">
           Community driven conferences, such as PyColorado are only succesful thanks to an army of volunteers.
           Interested in helping? Just fill out the form after the jump!
           <ProjectLinks>
-            <a href="#">Volunteer Application</a>
+            <a href="https://pycolorado.typeform.com/to/hzgBVt" target="_blank">Volunteer Registration</a>
           </ProjectLinks>
         </ProjectCard>
       </ProjectsWrapper>
@@ -144,7 +145,7 @@ const Index = () => (
       <Inner>
         <ContactText>
           Say <a href="mailto:hello@pycolorado.org">Hello</a> or find us on{' '}
-          <a href="https://twiiter.com/pycolorado">Twitter</a> & <a href="https://pycolorado.slack.com">Slack</a>
+          <a href="https://twiiter.com/pycolorado">Twitter</a> & <a href="https://pycolorado-slack.herokuapp.com/">Slack</a>
         </ContactText>
       </Inner>
       <Footer>

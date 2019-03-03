@@ -12,7 +12,7 @@ export const BigTitle = styled.h1`
 `
 
 export const Subtitle = styled.p`
-  ${tw`text-2xl text-right lg:text-4xl font-sans text-brand-blue -mt-16`};
+  ${tw`text-2xl text-right lg:text-4xl font-sans text-brand-blue xl:-mt-8 lg:-mt-8 md:-mt-1 sm:-mt-1`};
   text-transform: uppercase;
   font-weight: 800;
 `
