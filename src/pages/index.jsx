@@ -79,7 +79,7 @@ const Index = () => (
     <Layout />
     <Hero>
       <Wordmark />
-      <Subtitle>Septemeber 7 - 8, 2019 &nbsp;</Subtitle>
+      <Subtitle>September 7 - 8, 2019 &nbsp;</Subtitle>
     </Hero>
 
     <Projects>
@@ -89,7 +89,7 @@ const Index = () => (
           sponsor levels remaining. If you, or your company are interested in supporting conferences like PyColorado,
           please get in touch with us today!
           <ProjectLinks>
-            <a href="#">Sponsorship Prospectus (PDF)</a>
+            <a href="/PyColorado_2019_-_Sponsorship_Prospectus.pdf" target="_blank">Sponsorship Prospectus (PDF)</a>
           </ProjectLinks>
         </ProjectCard>
 
@@ -145,7 +145,7 @@ const Index = () => (
       <Inner>
         <ContactText>
           Say <a href="mailto:hello@pycolorado.org">Hello</a> or find us on{' '}
-          <a href="https://twiiter.com/pycolorado">Twitter</a> & <a href="https://pycolorado-slack.herokuapp.com/">Slack</a>
+          <a href="https://twiiter.com/pycolorado">Twitter</a> & <a href="https://slack.pycolorado.com">Slack</a>
         </ContactText>
       </Inner>
       <Footer>
