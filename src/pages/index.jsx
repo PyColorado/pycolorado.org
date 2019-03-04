@@ -8,14 +8,13 @@ import ProjectCard from '../components/ProjectCard'
 import Wordmark from '../components/Logo'
 
 // Elements
-import Inner from '../elements/Inner'
 import { Subtitle } from '../elements/Titles'
 
 // Views
 import Hero from '../views/Hero'
 import Projects from '../views/Projects'
 import About from '../views/About'
-import Contact from '../views/Contact'
+import Footer from '../views/Footer'
 
 const ProjectsWrapper = styled.div`
   ${tw`flex flex-wrap justify-between mt-16`};
@@ -59,19 +58,11 @@ const AboutDesc = styled.p`
 `
 
 const AboutTitle = styled.h1`
-  ${tw`text-5xl lg:text-5xl font-serif text-brand-blue mt-16 mb-8 tracking-wide relative inline-block`};
+  ${tw`text-2xl lg:text-5xl font-serif text-brand-blue mt-16 mb-8 mt-16 tracking-wide relative inline-block`};
   text-transform: uppercase;
   padding: 0rem 1rem;
   background: #fffff6;
   box-decoration-break: clone;
-`
-
-const ContactText = styled.p`
-  ${tw`text-alt-white font-sans text-xl md:text-2xl lg:text-3xl`};
-`
-
-const Footer = styled.footer`
-  ${tw`text-center text-alt-white pin-b p-6 font-sans text-md lg:text-lg`};
 `
 
 const Index = () => (
@@ -141,17 +132,7 @@ const Index = () => (
       </AboutDesc>
     </About>
 
-    <Contact>
-      <Inner>
-        <ContactText>
-          Say <a href="mailto:hello@pycolorado.org">Hello</a> or find us on{' '}
-          <a href="https://twiiter.com/pycolorado">Twitter</a> & <a href="https://slack.pycolorado.com">Slack</a>
-        </ContactText>
-      </Inner>
-      <Footer>
-        &copy; 2019 PyColorado. Made by <a href="https://cuttlesoft.com">Cuttlesoft</a>
-      </Footer>
-    </Contact>
+    <Footer />
   </>
 )
 
