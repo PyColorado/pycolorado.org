@@ -144,7 +144,7 @@ const Index = () => (
       <Inner>
         <ContactText>
           Say <a href="mailto:hello@pycolorado.org">Hello</a> or find us on{' '}
-          <a href="https://twiiter.com/pycolorado">Twitter</a> & <a href="https://pycolorado.slack.com">Slack</a>
+          <a href="https://twiiter.com/pycolorado">Twitter</a> & <a href="https://slack.pycolorado.org/">Slack</a>
         </ContactText>
       </Inner>
       <Footer>
