@@ -21,7 +21,7 @@ const Footer = () => (
     <Contact>
       <Inner>
         <ContactText>Say <a href="mailto:hello@pycolorado.org">Hello</a> or find us on{' '}
-          <a href="https://twitter.com/pycolorado">Twitter</a> & <a href="https://slack.pycolorado.com">Slack</a>
+          <a href="https://twitter.com/pycolorado">Twitter</a> & <a href="https://slack.pycolorado.org/">Slack</a>
         </ContactText>
 
         <FooterBottom>
