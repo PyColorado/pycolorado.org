@@ -86,14 +86,15 @@ const Index = () => (
 
         <ProjectCard title="Attend" link="" bg="white">
           Ready to start your journey to PyColorado? Well, grab your trekking poles, fill your Nalgenes, and lace up
-          your boots!
+          your boots! This year's venue is the <a href="http://www.artscomplex.com/venues/detail/studio-loft" target="_blank">Studio Loft</a>,
+          conveniently located in the heart of downtown Denver.
           <ProjectLinks>
             <a href="https://ti.to/pycolorado/pycolorado-2019" target="_blank">Purchase Tickets</a>
           </ProjectLinks>
         </ProjectCard>
 
         <ProjectCard title="Speak" link="" bg="white">
-          Our Call for Proposals is open from March 4 through May 9th. We're accepting submissions for Talks, Tutorial
+          Our Call for Proposals is open from March 4 through May 16th. We're accepting submissions for Talks, Tutorial
           Workshops, and Lightning Talks!
           <ProjectLinks>
             <a href="https://www.papercall.io/pycolorado" target="_blank">Submit via our CFP</a>
