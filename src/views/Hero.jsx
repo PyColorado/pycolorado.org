@@ -21,5 +21,5 @@ export default Hero
 
 Hero.propTypes = {
   children: PropTypes.node.isRequired,
-  offset: PropTypes.number.isRequired,
+  // offset: PropTypes.number.isRequired,
 }

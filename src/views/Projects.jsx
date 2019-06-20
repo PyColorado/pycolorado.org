@@ -18,5 +18,5 @@ export default Projects
 
 Projects.propTypes = {
   children: PropTypes.node.isRequired,
-  offset: PropTypes.number.isRequired,
+  // offset: PropTypes.number.isRequired,
 }

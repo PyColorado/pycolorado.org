@@ -4,6 +4,7 @@ import tw from 'tailwind.macro'
 
 // Components
 import Layout from '../components/Layout'
+import NavBar from '../components/NavBar'
 import ProjectCard from '../components/ProjectCard'
 import Wordmark from '../components/Logo'
 
@@ -65,8 +66,41 @@ const AboutTitle = styled.h1`
   box-decoration-break: clone;
 `
 
+const CTA = styled.a`
+  color: #EDEDED;
+  text-decoration: none;
+  position: relative;
+  width: 100%
+  border-bottom: 2px dotted #EDEDED;
+  transition-timing-function: ease;
+  transition-duration: 200ms;
+
+  &:hover {
+    border-bottom: 2px dotted transparent;
+  }
+
+  &:before {
+    content: "";
+    background-color: #EDEDED;
+    visibility: hidden;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all 0.3s ease-in-out 0s;
+    transform: scaleX(0);
+  }
+
+  &:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+`
+
 const Index = () => (
   <>
+    <NavBar />
     <Layout />
     <Hero>
       <Wordmark />

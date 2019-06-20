@@ -37,5 +37,5 @@ export default About
 
 About.propTypes = {
   children: PropTypes.node.isRequired,
-  offset: PropTypes.number.isRequired,
+  // offset: PropTypes.number.isRequired,
 }

@@ -15,5 +15,5 @@ export default Contact
 
 Contact.propTypes = {
   children: PropTypes.node.isRequired,
-  offset: PropTypes.number.isRequired,
+  // offset: PropTypes.number.isRequired,
 }
