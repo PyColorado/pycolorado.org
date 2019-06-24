@@ -4,13 +4,17 @@ import styled from 'styled-components'
 import tw from 'tailwind.macro'
 import Wordmark from './Logo'
 
-// justify-content: ${props => (props.centered ? 'center' : 'space-between')};
+const Inner = styled.div`
+  ${tw`w-full xl:w-3/4 text-center mx-auto -mt-6`};
+  background: ${props => props.bg};
+`
+
 const Nav = styled.nav`
   ${tw`flex items-center justify-between flex-wrap p-6 w-full z-10 -mb-32`};
 `
 
 const MobileMenu = styled.div`
-  ${tw`block xl:invisible visible`};
+  ${tw`block xl:invisible visible mt-4`};
 `
 
 const NavLinks = styled.div`
@@ -43,6 +47,7 @@ class NavBar extends Component {
 
     return (
       <>
+      <Inner>
         <Nav centered={centered}>
           {showLogo && (
             <LogoWrapper>
@@ -53,11 +58,12 @@ class NavBar extends Component {
           )}
 
           <MobileMenu>
-            <button className="flex items-center px-3 py-2" onClick={ this.toggleMobileMenu }>
-              <svg className="h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
-              </svg>
-            </button>
+            <div id="nav-icon3" className={isMobileNavOpen ? 'open' : null} onClick={this.toggleMobileMenu}>
+              <span />
+              <span />
+              <span />
+              <span />
+            </div>
           </MobileMenu>
 
           <NavLinks style={isMobileNavOpen ? { display: 'block' } : null }>
@@ -73,15 +79,16 @@ class NavBar extends Component {
               <NavLink to="/code-of-conduct" className={`nav-link ${theme}`} activeClassName="active">
                 Code of Conduct
               </NavLink>
-              <NavLink to="/sponsor" className={`nav-link ${theme}`} activeClassName="active">
+              {/* <NavLink to="/sponsor" className={`nav-link ${theme}`} activeClassName="active">
                 Sponsor
-              </NavLink>
+              </NavLink> */}
               <NavLink to="/faq" className={`nav-link ${theme}`} activeClassName="active">
                 FAQ
               </NavLink>
             </div>
           </NavLinks>
         </Nav>
+      </Inner>
       </>
     )
   }
