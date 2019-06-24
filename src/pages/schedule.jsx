@@ -49,15 +49,15 @@ const TalkCard = ({ title, children, bg }) => (
 )
 
 const shouldDisplayTalk = talk =>
-  talk.talk_format === "Talk (~30-45 minutes)" && talk.state === 'accepted' && talk.confirmed
+  talk.talk_format === 'Talk (~30-45 minutes)' && talk.state === 'accepted' && talk.confirmed
 
 const shouldDisplayKeynote = keynote =>
-  keynote.talk_format === "Keynote" && keynote.state === 'accepted' && keynote.confirmed
+  keynote.talk_format === 'Keynote' && keynote.state === 'accepted' && keynote.confirmed
 
-const Schedule = () => (
+const Schedule = ({ location }) => (
   <>
     <Layout>
-      <NavBar showLogo theme="lighten" />
+      <NavBar showLogo theme="lighten" location={location} />
       <DividerTop bg={`#fffff6 url(${TopoBlueBG}); background-size: cover;`} />
       <PageContent height="auto">
         <Section bg="white">
@@ -65,7 +65,10 @@ const Schedule = () => (
 
           <SectionTitle>Scheduled Talks</SectionTitle>
           <SectionSubTitle>September 7 - 8 | Sat, Sun 8:00 AM - 6 PM MDT</SectionSubTitle>
-          <p>Enjoy talks covering Python Fundamentals, Web, Data Science, DevOps, People, and lots more. A detailed schedule will be updated soon!</p>
+          <p>
+            Enjoy talks covering Python Fundamentals, Web, Data Science, DevOps, People, and lots more. A detailed
+            schedule will be updated soon!
+          </p>
           <br />
           {schedule.map(
             talk =>
@@ -78,8 +81,8 @@ const Schedule = () => (
           )}
 
           <SectionTitle>Keynotes</SectionTitle>
-          <SectionSubTitle></SectionSubTitle>
-          <p></p>
+          <SectionSubTitle />
+          <p />
           {schedule.map(
             keynote =>
               shouldDisplayKeynote(keynote) && (

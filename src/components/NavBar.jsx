@@ -42,53 +42,53 @@ class NavBar extends Component {
   }
 
   render() {
-    const { centered, showLogo, theme } = this.props
+    const { centered, showLogo, theme, location } = this.props
     const { isMobileNavOpen } = this.state
 
     return (
       <>
-      <Inner>
-        <Nav centered={centered}>
-          {showLogo && (
-            <LogoWrapper>
-              <NavLink to="/">
-                <Wordmark />
-              </NavLink>
-            </LogoWrapper>
-          )}
-
-          <MobileMenu>
-            <div id="nav-icon3" className={isMobileNavOpen ? 'open' : null} onClick={this.toggleMobileMenu}>
-              <span />
-              <span />
-              <span />
-              <span />
-            </div>
-          </MobileMenu>
-
-          <NavLinks style={isMobileNavOpen ? { display: 'block' } : null }>
-            <div className="flex items-center -mx-6">
-              {location.pathname !== '/' && (
-                <NavLink to="/" className={`nav-link ${theme}`} activeClassName="active">
-                  Home
+        <Inner>
+          <Nav centered={centered}>
+            {showLogo && (
+              <LogoWrapper>
+                <NavLink to="/">
+                  <Wordmark />
                 </NavLink>
-              )}
-              <NavLink to="/schedule" className={`nav-link ${theme}`} activeClassName="active">
-                Schedule
-              </NavLink>
-              <NavLink to="/code-of-conduct" className={`nav-link ${theme}`} activeClassName="active">
-                Code of Conduct
-              </NavLink>
-              {/* <NavLink to="/sponsor" className={`nav-link ${theme}`} activeClassName="active">
+              </LogoWrapper>
+            )}
+
+            <MobileMenu>
+              <div id="nav-icon3" className={isMobileNavOpen ? 'open' : null} onClick={this.toggleMobileMenu}>
+                <span />
+                <span />
+                <span />
+                <span />
+              </div>
+            </MobileMenu>
+
+            <NavLinks style={isMobileNavOpen ? { display: 'block' } : null}>
+              <div className="flex items-center -mx-6">
+                {location.pathname !== '/' && (
+                  <NavLink to="/" className={`nav-link ${theme}`} activeClassName="active">
+                    Home
+                  </NavLink>
+                )}
+                <NavLink to="/schedule" className={`nav-link ${theme}`} activeClassName="active">
+                  Schedule
+                </NavLink>
+                <NavLink to="/code-of-conduct" className={`nav-link ${theme}`} activeClassName="active">
+                  Code of Conduct
+                </NavLink>
+                {/* <NavLink to="/sponsor" className={`nav-link ${theme}`} activeClassName="active">
                 Sponsor
               </NavLink> */}
-              <NavLink to="/faq" className={`nav-link ${theme}`} activeClassName="active">
-                FAQ
-              </NavLink>
-            </div>
-          </NavLinks>
-        </Nav>
-      </Inner>
+                <NavLink to="/faq" className={`nav-link ${theme}`} activeClassName="active">
+                  FAQ
+                </NavLink>
+              </div>
+            </NavLinks>
+          </Nav>
+        </Inner>
       </>
     )
   }

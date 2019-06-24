@@ -1,7 +1,8 @@
 import React from 'react'
 import SEO from './SEO'
-import("../styles/main.scss")
 import Footer from '../views/Footer'
+
+import("../styles/main.scss")
 
 const Layout = ({ children }) => (
   <>

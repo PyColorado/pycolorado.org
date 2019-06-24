@@ -17,10 +17,10 @@ const AboutDesc = styled.p`
   box-decoration-break: clone;
 `
 
-const Index = () => (
+const Index = ({ location }) => (
   <>
     <Layout>
-      <NavBar centered theme="dark" />
+      <NavBar centered theme="dark" location={location} />
       <Hero>
         <Wordmark />
         <Subtitle>September 7 - 8, 2019 &nbsp;</Subtitle>

@@ -69,11 +69,12 @@ class FAQ extends Component {
 
   render() {
     const { expandedQuestionKey } = this.state
+    const { location } = this.props
 
     return (
       <>
         <Layout>
-          <NavBar showLogo theme="lighten" />
+          <NavBar showLogo theme="lighten" location={location} />
           <DividerTop bg={`#fffff6 url(${TopoBlueBG}); background-size: cover;`} />
           <PageContent height="auto">
             <Section bg="white">
