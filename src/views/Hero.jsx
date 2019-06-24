@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
-import Content from '../elements/Content'
+import { Content } from '../elements'
 import bg from '../images/hero-bg.svg'
 
 const Wrapper = styled.div`

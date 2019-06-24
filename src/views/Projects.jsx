@@ -1,9 +1,67 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import tw from 'tailwind.macro'
 import { DividerMiddle } from '../elements/Dividers'
-import Content from '../elements/Content'
+import { Content } from '../elements'
 import Inner from '../elements/Inner'
 import TopoBlueBG from '../images/topo-blue.svg'
+
+const ProjectsWrapper = styled.div`
+  ${tw`flex flex-wrap justify-between mt-16`};
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(1, 1fr);
+  @media (max-width: 1200px) {
+    grid-gap: 1rem;
+  }
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+`
+
+const ProjectLinks = styled.div`
+  ${tw`mt-8 tracking-wide`};
+  a:not(:last-child) {
+    margin-right: 20px;
+  }
+`
+
+const Wrapper = styled.div`
+  ${tw`relative no-underline px-8 py-4 md:py-24 text-white`};
+  background: ${props => props.bg};
+  border: solid 5px #1f506e;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  &:hover {
+    ${tw`shadow-lg`};
+    transform: translateY(-1px);
+    transition: all 250ms ease-in;
+  }
+
+  a {
+    color: #1f506e;
+    border-bottom: 2px dotted #1f506e;
+    font-weight: 700;
+  }
+
+  a:hover {
+    border-bottom: 2px dotted transparent;
+  }
+
+  a:before {
+    background-color: #1f506e;
+  }
+`
+
+const Title = styled.div`
+  ${tw`text-brand-blue uppercase text-2xl md:text-3xl xl:text-4xl tracking-wide font-serif`};
+  font-weight: 600;
+`
+
+const Text = styled.div`
+  ${tw`text-brand-blue font-sans text-lg`};
+`
 
 const Projects = ({ children }) => (
   <>
@@ -14,7 +72,14 @@ const Projects = ({ children }) => (
   </>
 )
 
-export default Projects
+const ProjectCard = ({ title, link, children, bg }) => (
+  <Wrapper bg={bg}>
+    <Title>{title}</Title>
+    <Text>{children}</Text>
+  </Wrapper>
+)
+
+export { ProjectsWrapper, ProjectLinks, Projects, ProjectCard }
 
 Projects.propTypes = {
   children: PropTypes.node.isRequired,

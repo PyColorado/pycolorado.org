@@ -1,61 +1,58 @@
 import React from 'react'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
-
-// Views
 import Contact from './Contact'
 
-// Elements
-import Inner from '../elements/Inner'
+const Inner = styled.div`
+  ${tw`w-full xxl:w-3/4 text-center lg:text-left mt-24 mb-8`};
+  background: ${props => props.bg};
+`
 
 const ContactText = styled.div`
-  ${tw`text-alt-white font-sans text-xl md:mb-4 text-lg lg:text-3xl`};
+  ${tw`text-alt-white font-sans md:mb-4 text-3xl`};
 `
 
-const FooterBottom = styled.footer`
-  ${tw`text-left text-alt-white pin-b p-6 font-sans text-md md:p-1 text-xs lg:text-lg`};
-`
+const MapText = styled.p`
+  ${tw`text-center text-alt-white mt-8 pin-b p-2 font-mono text-sm`};
 
-const Link = styled.a`
-  color: #EDEDED;
-  text-decoration: none;
-  position: relative;
-  width: 100%
-  border-bottom: 2px dotted #EDEDED;
-  transition-timing-function: ease;
-  transition-duration: 200ms;
-
-  &:hover {
-    border-bottom: 2px dotted transparent;
+  > h2 {
+    ${tw`font-mono text-alt-white text-xl font-bold`}
   }
 
-  &:before {
-    content: "";
-    background-color: #EDEDED;
-    visibility: hidden;
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    transition: all 0.3s ease-in-out 0s;
-    transform: scaleX(0);
-  }
-
-  &:hover:before {
-    visibility: visible;
-    transform: scaleX(1);
+  p:first-of-type {
+    ${tw`-mt-8`}
   }
 `
 
 const Footer = () => (
   <>
+    <MapText>
+      <h2>COUNTOUR INTERVAL 40 FEET</h2>
+      <p>NATIONAL GEODETIC VERTICAL DATUM OF 1929</p>
+      <br />
+      <p>
+        THIS MAP DOES NOT COMPLY WITH NATIONAL MAP ACCURACY STANDARDS
+        <br />
+        FOR SALE BY U.S. GEOLOGICAL SURVEY, P.O. BOX 25286, DENVER, CO 80225
+        <br />A FOLDER DESCRIBING TOPOGRAPHIC MAPS AND SYMBOLS IS AVAILABLE ON REQUEST
+        {/* https://www.youtube.com/watch?v=CoVcRxza8nI */}
+      </p>
+    </MapText>
     <Contact>
       <Inner>
         <ContactText>
-          Say <Link href="mailto:hello@pycolorado.org">Hello</Link>, or find us on{' '}
-          <Link href="https://twitter.com/pycolorado">Twitter</Link> {' & '}
-          <Link href="https://slack.pycolorado.org/">Slack</Link>
+          Say{' '}
+          <a className="fancy lighten" href="mailto:hello@pycolorado.org">
+            Hello
+          </a>
+          , or find us on{' '}
+          <a className="fancy lighten" href="https://twitter.com/pycolorado">
+            Twitter
+          </a>{' '}
+          {' & '}
+          <a className="fancy lighten" href="https://slack.pycolorado.org/">
+            Slack
+          </a>
         </ContactText>
       </Inner>
     </Contact>

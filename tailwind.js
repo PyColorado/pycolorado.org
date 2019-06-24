@@ -49,7 +49,7 @@ const colors = {
   'blue-black': '#161719',
   'blue-grey': '#23262b',
 
-  black: '#222b2f',
+  black: '#23262b',
   'grey-darkest': '#273238',
   'grey-darker': '#364349',
   'grey-dark': '#70818a',
@@ -176,6 +176,7 @@ module.exports = {
     lg: '900px',
     xl: '1200px',
     xxl: '1600px',
+    xxxl: '2000px',
   },
 
   /*
