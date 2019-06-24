@@ -15,3 +15,9 @@ export const DividerMiddle = styled(Divider)`
   clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
   height: 120%;
 `
+
+export const DividerTop = styled(Divider)`
+${tw`mt-64`};
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+  height: 120%;
+`

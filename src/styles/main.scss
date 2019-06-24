@@ -1,0 +1,21 @@
+// sass-lint:disable indentation
+@charset 'UTF-8';
+
+@tailwind utilities;
+
+// 1. Configuration and helpers
+@import
+  'abstracts/variables';
+
+// 2. Vendors
+@import
+  'vendor/normalize';
+
+// 3. Base stuff
+@import
+  'base/reset',
+  'base/base';
+
+// 4. Components
+@import
+'components/nav';

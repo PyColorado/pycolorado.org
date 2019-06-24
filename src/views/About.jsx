@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Divider } from '../elements/Dividers'
-import Content from '../elements/Content'
+import { Content } from '../elements'
 import Inner from '../elements/Inner'
 import TopoWhiteBG from '../images/topo-white.svg'
 
@@ -37,5 +37,5 @@ export default About
 
 About.propTypes = {
   children: PropTypes.node.isRequired,
-  offset: PropTypes.number.isRequired,
+  // offset: PropTypes.number.isRequired,
 }

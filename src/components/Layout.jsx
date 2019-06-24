@@ -1,13 +1,14 @@
 import React from 'react'
-import GlobalStyle from '../styles/global'
 import SEO from './SEO'
-import 'typeface-halant'
-import 'typeface-nunito-sans'
+import Footer from '../views/Footer'
 
-const Layout = () => (
+import("../styles/main.scss")
+
+const Layout = ({ children }) => (
   <>
     <SEO />
-    <GlobalStyle />
+    {children}
+    <Footer />
   </>
 )
 

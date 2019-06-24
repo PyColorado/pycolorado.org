@@ -11,6 +11,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
+    'gatsby-plugin-sass',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -52,6 +53,7 @@ module.exports = {
     },
     /* Must be placed at the end */
     'gatsby-plugin-offline',
+    'gatsby-plugin-netlify-cms',
     'gatsby-plugin-netlify',
   ],
 }
