@@ -9,7 +9,7 @@ const Inner = styled.div`
 `
 
 const ContactText = styled.div`
-  ${tw`text-alt-white font-sans md:mb-4 text-3xl`};
+  ${tw`text-alt-white text-center font-sans md:mb-4 text-3xl`};
 `
 
 const MapText = styled.p`

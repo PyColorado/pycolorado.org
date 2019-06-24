@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
 import { Layout, NavBar, Wordmark } from '../components'
-import { About, Hero, ProjectsWrapper, Projects, ProjectLinks, ProjectCard } from '../views'
+import { About, Hero, Sponsors, ProjectsWrapper, Projects, ProjectLinks, ProjectCard } from '../views'
 import { Subtitle } from '../elements'
 
 const AboutTitle = styled.h1`
@@ -25,6 +25,8 @@ const Index = () => (
         <Wordmark />
         <Subtitle>September 7 - 8, 2019 &nbsp;</Subtitle>
       </Hero>
+
+      <Sponsors />
 
       <Projects>
         <ProjectsWrapper>
