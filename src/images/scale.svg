@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="861px" height="45px" viewBox="0 0 861 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-5" transform="translate(-1.000000, -5.000000)">
+            <g id="Group-3-Copy">
+                <g id="Group-2" transform="translate(5.000000, 41.000000)" stroke="#1F506E">
+                    <rect id="Rectangle" x="0.5" y="0.5" width="805" height="8"></rect>
+                    <g id="Group">
+                        <rect id="Rectangle" x="0.5" y="0.5" width="41" height="8"></rect>
+                        <path d="M1.5,4.5 L41.4405551,4.5" id="Line" stroke-linecap="square"></path>
+                        <path d="M3,6 L40,6" id="Line" stroke-width="4" stroke-linecap="square"></path>
+                        <path d="M164,6 L201,6" id="Line" stroke-width="4" stroke-linecap="square"></path>
+                        <path d="M84,6 L121,6" id="Line-Copy" stroke-width="4" stroke-linecap="square"></path>
+                    </g>
+                    <g id="Group-Copy" transform="translate(81.000000, 0.000000)">
+                        <rect id="Rectangle" x="0.5" y="0.5" width="41" height="8"></rect>
+                        <path d="M1.5,4.5 L41.4405551,4.5" id="Line" stroke-linecap="square"></path>
+                    </g>
+                    <g id="Group-Copy-2" transform="translate(162.000000, 0.000000)">
+                        <rect id="Rectangle" x="0.5" y="0.5" width="41" height="8"></rect>
+                        <path d="M1.5,4.5 L41.4405551,4.5" id="Line" stroke-linecap="square"></path>
+                    </g>
+                    <g id="Group-Copy-3" transform="translate(243.000000, 0.000000)">
+                        <rect id="Rectangle" x="0.5" y="0.5" width="41" height="8"></rect>
+                        <path d="M1.5,4.5 L41.4405551,4.5" id="Line" stroke-linecap="square"></path>
+                    </g>
+                    <g id="Group-Copy-4" transform="translate(324.000000, 0.000000)">
+                        <rect id="Rectangle" x="0.5" y="0.5" width="41" height="8"></rect>
+                        <path d="M1.5,4.5 L41.4405551,4.5" id="Line" stroke-linecap="square"></path>
+                    </g>
+                    <g id="Group-Copy-5" transform="translate(403.000000, 0.000000)">
+                        <rect id="Rectangle" x="0.5" y="0.5" width="402" height="8"></rect>
+                        <path d="M0.870512663,4.5 L402.13787,4.5" id="Line" stroke-linecap="square"></path>
+                    </g>
+                </g>
+                <text id="1" font-family="SourceCodePro-Regular, Source Code Pro" font-size="16" font-weight="normal" fill="#1F506E">
+                    <tspan x="0.2" y="37">1</tspan>
+                </text>
+                <g id="Group-4" transform="translate(206.000000, 20.000000)">
+                    <text id="1" font-family="SourceCodePro-Regular, Source Code Pro" font-size="9" font-weight="normal" fill="#1F506E">
+                        <tspan x="1.3" y="9">1</tspan>
+                    </text>
+                    <text id="2" font-family="SourceCodePro-Regular, Source Code Pro" font-size="9" font-weight="normal" fill="#1F506E">
+                        <tspan x="1.3" y="18">2</tspan>
+                    </text>
+                    <path d="M1,11 L7,11" id="Line-2" stroke="#1F506E" stroke-width="0.5" stroke-linecap="square"></path>
+                </g>
+                <text id="0" font-family="SourceCodePro-Regular, Source Code Pro" font-size="16" font-weight="normal" fill="#1F506E">
+                    <tspan x="403.2" y="37">0</tspan>
+                </text>
+                <text id="SCALE-1:24000" font-family="SourceCodePro-Semibold, Source Code Pro" font-size="16" font-weight="500" fill="#1F506E">
+                    <tspan x="346.1" y="16">SCALE 1:24000 </tspan>
+                </text>
+                <text id="1-MILE" font-family="SourceCodePro-Regular, Source Code Pro" font-size="16" font-weight="normal" fill="#1F506E">
+                    <tspan x="805.2" y="37">1 MILE</tspan>
+                </text>
+            </g>
+            <path d="M251,47 L288,47" id="Line" stroke="#1F506E" stroke-width="4" stroke-linecap="square"></path>
+            <path d="M332,47 L369,47" id="Line" stroke="#1F506E" stroke-width="4" stroke-linecap="square"></path>
+            <path d="M410,47 L808.598357,47" id="Line-Copy-2" stroke="#1F506E" stroke-width="4" stroke-linecap="square"></path>
+        </g>
+    </g>
+</svg>
