@@ -39,7 +39,7 @@ const Wrapper = styled.div`
 `
 
 const Question = styled.div`
-  ${tw`text-white text-3xl font-serif font-bold p-6`};
+  ${tw`text-white text-xl md:text-2xl font-serif font-bold p-6`};
   background: #1f506e;
 `
 
@@ -82,7 +82,7 @@ class FAQ extends Component {
 
               {faq.map(section => (
                 <div key={section.name}>
-                  <h1>{section.name}</h1>
+                  <h2>{section.name}</h2>
                   {section.questions.map(q => (
                     <FAQCard
                       key={q.question}

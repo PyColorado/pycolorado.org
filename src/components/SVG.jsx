@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
-import { width as twWidth } from '../../tailwind'
 import { hidden } from '../styles/utils'
 
 const Wrapper = styled.svg`
@@ -10,7 +9,7 @@ const Wrapper = styled.svg`
   stroke: currentColor;
   ${props => props.hiddenMobile && hidden};
   color: ${props => props.stroke};
-  width: ${props => props.svgWidth};
+  // width: ${props => props.svgWidth};
   fill: ${props => props.fill};
   left: ${props => props.left};
   top: ${props => props.top};

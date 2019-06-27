@@ -19,17 +19,17 @@ const Wrapper = styled.div`
 `
 
 const SectionTitle = styled.h1`
-  ${tw`text-black text-4xl font-serif font-bold`};
+  ${tw`text-black text-2xl md:text-3xl font-serif font-bold`};
   margin-bottom: -2.5rem !important;
 `
 
 const SectionSubTitle = styled.h3`
-  ${tw`text-black text-3xl font-serif font-bold -mt-2`};
+  ${tw`text-black text-xl md:text-2xl font-serif font-bold -mt-2`};
   margin-bottom: -0.5rem !important;
 `
 
 const Title = styled.div`
-  ${tw`text-white text-3xl font-serif font-bold mb-4 p-6`};
+  ${tw`text-white text-xl md:text-2xl font-serif font-bold mb-4 p-6`};
   background: #1f506e;
 `
 
