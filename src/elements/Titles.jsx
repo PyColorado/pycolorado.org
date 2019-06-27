@@ -4,7 +4,7 @@ import tw from 'tailwind.macro'
 import scale from '../images/scale.svg'
 
 export const Title = styled.h1`
-  ${tw`text-5xl lg:text-5xl text-brand-blue mt-16 mb-8 tracking-wide relative inline-block uppercase`};
+  ${tw`text-5xl lg:text-5xl text-primary mt-16 mb-8 tracking-wide relative inline-block uppercase`};
 `
 
 export const BigTitle = styled.h1`
@@ -13,15 +13,15 @@ export const BigTitle = styled.h1`
 `
 
 export const Subtitle = styled.div`
-  ${tw`text-right text-4xl font-bold md:text-2xl text-brand-blue -mt-8 uppercase`};
+  ${tw`text-right md:-mt-8 -mt-4 md:text-3xl text-xl font-bold text-blue-900  uppercase`};
 `
 
 const PageTitleHeading = styled.h1`
-  ${tw`text-6xl text-brand-blue text-center`};
+  ${tw`md:text-6xl text-4xl text-blue-900 md:text-center text-left`};
 `
 
 const Scale = styled.div`
-  ${tw`w-full mx-auto h-16 -mt-8 mb-16`};
+  ${tw`w-full mx-auto h-16 -mt-8 mb-16 md:block hidden`};
   background: ${props => props.bg};
 `
 

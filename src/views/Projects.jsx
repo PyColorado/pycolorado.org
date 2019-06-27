@@ -8,7 +8,7 @@ import Inner from '../elements/Inner'
 import TopoBlueBG from '../images/topo-blue.svg'
 
 const ProjectsWrapper = styled.div`
-  ${tw`flex flex-wrap justify-between mt-16`};
+  ${tw`flex flex-wrap justify-between`};
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(1, 1fr);
@@ -21,7 +21,7 @@ const ProjectsWrapper = styled.div`
   }
 `
 
-const ProjectLinks = styled.div`
+const ProjectLinks = styled.h5`
   ${tw`mt-8 tracking-wide`};
   a:not(:last-child) {
     margin-right: 20px;
@@ -29,7 +29,7 @@ const ProjectLinks = styled.div`
 `
 
 const Wrapper = styled.div`
-  ${tw`relative no-underline px-8 py-4 md:py-24 text-white`};
+  ${tw`relative no-underline p-8 text-white`};
   background: ${props => props.bg};
   border: solid 5px #1f506e;
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -55,12 +55,12 @@ const Wrapper = styled.div`
 `
 
 const Title = styled.div`
-  ${tw`text-brand-blue uppercase text-2xl md:text-3xl xl:text-4xl tracking-wide font-serif`};
+  ${tw`text-blue-900 uppercase text-2xl md:text-3xl xl:text-4xl tracking-wide font-serif mb-6`};
   font-weight: 600;
 `
 
 const Text = styled.div`
-  ${tw`text-brand-blue font-sans text-lg`};
+  ${tw`text-black font-sans text-lg leading-normal`};
 `
 
 const Projects = ({ children }) => (

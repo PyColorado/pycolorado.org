@@ -15,9 +15,9 @@ module.exports = {
   userTwitter: '@pycolorado',
   ogSiteName: 'pycolorado',
   ogLanguage: 'en_US',
-  googleAnalyticsID: 'UA-',
+  googleAnalyticsID: 'UA-142670998-1',
 
   // Manifest and Progress color
-  themeColor: tailwind.colors.orange,
-  backgroundColor: tailwind.colors.blue,
+  themeColor: tailwind.theme.colors.primary,
+  backgroundColor: tailwind.theme.colors.primary,
 }

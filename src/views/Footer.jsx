@@ -2,21 +2,25 @@ import React from 'react'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
 import Contact from './Contact'
+import { Pendant } from '../components'
 
 const Inner = styled.div`
-  ${tw`w-full xxl:w-3/4 text-center lg:text-left mt-24 mb-8`};
-  background: ${props => props.bg};
+  ${tw`w-full xl:w-3/4 text-center lg:text-left mt-24 mb-8`};
+`
+
+const PendantWrapper = styled.div`
+  ${tw`mx-auto md:w-1/5 w-1/2 mt-12 opacity-25`};
 `
 
 const ContactText = styled.div`
-  ${tw`text-alt-white text-center font-sans md:mb-4 text-3xl`};
+  ${tw`text-white md:text-center text-left font-sans md:mb-4 text-4xl leading-relaxed`};
 `
 
 const MapText = styled.p`
-  ${tw`text-center text-alt-white mt-8 pin-b p-2 font-mono text-sm`};
+  ${tw`text-center text-alt-white mt-8 p-2 font-mono md:text-sm text-xs text-blue-100 opacity-25`};
 
   > h2 {
-    ${tw`font-mono text-alt-white text-xl font-bold`}
+    ${tw`font-mono text-alt-white text-xl font-bold text-blue-100 opacity-25`}
   }
 
   p:first-of-type {
@@ -26,6 +30,10 @@ const MapText = styled.p`
 
 const Footer = () => (
   <>
+    <PendantWrapper>
+      <Pendant />
+    </PendantWrapper>
+
     <MapText>
       <h2>COUNTOUR INTERVAL 40 FEET</h2>
       <p>NATIONAL GEODETIC VERTICAL DATUM OF 1929</p>

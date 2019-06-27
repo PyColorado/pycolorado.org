@@ -12,7 +12,7 @@ const SponsorsWrapper = styled.a`
 `
 
 const Title = styled.h1`
-  ${tw`text-4xl text-alt-white tracking-wide uppercase`};
+  ${tw`text-4xl text-white text-white tracking-wide`};
 `
 
 const Sponsor = styled.div`
