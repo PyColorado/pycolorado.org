@@ -33,8 +33,8 @@ const Title = styled.div`
   background: #1f506e;
 `
 
-const Speaker = styled.h3`
-  ${tw`text-black font-sans text-2xl mt-4 mb-0`};
+const Speaker = styled.a`
+  ${tw`text-black font-sans font-bold text-2xl mt-4 mb-0`};
 `
 
 const Text = styled.div`
@@ -70,17 +70,19 @@ const Schedule = ({ location }) => (
             schedule will be updated soon!
           </p>
           <br />
-          {schedule.map(
-            talk =>
-              shouldDisplayTalk(talk) && (
-                <TalkCard key={talk.title} title={talk.title} link="">
-                  {talk.abstract}
-                  <Speaker>{talk.name}</Speaker>
-                </TalkCard>
-              )
-          )}
+          {schedule.map(talk => (
+            <TalkCard key={talk.order} title={talk.title} link="">
+              <strong>{talk.day} : {talk.time}</strong>
+              <br />
+              <br />
+              {talk.blurb}
+              <br />
+              <br />
+              <Speaker href={talk.social_link}>{talk.speaker}</Speaker>
+            </TalkCard>
+          ))}
 
-          <SectionTitle>Keynotes</SectionTitle>
+          {/* <SectionTitle>Keynotes</SectionTitle>
           <SectionSubTitle />
           <p />
           {schedule.map(
@@ -91,7 +93,7 @@ const Schedule = ({ location }) => (
                   <Speaker>{keynote.name}</Speaker>
                 </TalkCard>
               )
-          )}
+          )} */}
         </Section>
       </PageContent>
     </Layout>
