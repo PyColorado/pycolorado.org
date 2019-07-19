@@ -1,4 +1,4 @@
-Type,Day,Order,Time,Title,Speaker,Blurb,Social Link
+Type,Day,Order,Time,Title,Speaker,Blurb,Social_Link
 Keynote,Saturday,1,9:30am - 10:10am,Untitled,Ewa Jodlowska,?,https://twitter.com/ewa_jodlowska
 Regular Talk,Saturday,2,10:20am - 10:50am,Developing With Empathy ,Rami Chowdhury,"Building software is a team sport, we’re told. Yet it’s cooperation that makes teams work, and without empathy we can’t cooperate. This talk looks at adding care to our code and raising the bar beyond ""just come talk to me if you have a problem"".",https://twitter.com/necaris
 Regular Talk,Saturday,3,11:00am - 11:30am,"Pandas May Be Slow, but Pandas Doesn't Have to Be",Andrew Vaccaro,"Python is quickly becoming the de-facto language of data science. Pandas is one of the most popular libraries for managing and transforming data, but many users are unaware of strategies to tune pandas for performance. Simple changes can greatly speed up data processing when applied correctly.",https://www.linkedin.com/in/andrew-vaccaro-510187103/
