@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
 import { Content } from '../elements'
-import bg from '../images/hero-bg.svg'
+import bg from '../images/hero-bg.jpg'
 
 const Wrapper = styled.div`
   ${tw`w-full -mt-64 xl:w-2/3 md:p-24 lg:py-32`};

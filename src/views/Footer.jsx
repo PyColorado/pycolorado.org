@@ -9,18 +9,18 @@ const Inner = styled.div`
 `
 
 const PendantWrapper = styled.div`
-  ${tw`mx-auto md:w-1/5 w-1/2 mt-12 opacity-25`};
+  ${tw`mx-auto md:w-1/5 w-1/2 md:mt-12 mt-48 opacity-25`};
 `
 
 const ContactText = styled.div`
-  ${tw`text-white md:text-center text-left font-sans md:mb-4 text-4xl leading-relaxed`};
+  ${tw`text-white text-center font-sans md:mb-4 md:text-4xl text-3xl leading-relaxed`};
 `
 
-const MapText = styled.p`
+const MapText = styled.div`
   ${tw`text-center text-alt-white mt-8 p-2 font-mono md:text-sm text-xs text-blue-100 opacity-25`};
 
   > h2 {
-    ${tw`font-mono text-alt-white text-xl font-bold text-blue-100 opacity-25`}
+    ${tw`font-mono text-alt-white text-xl font-bold text-blue-100`}
   }
 
   p:first-of-type {

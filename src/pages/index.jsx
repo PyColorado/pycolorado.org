@@ -6,8 +6,7 @@ import { About, Hero, Sponsors, ProjectsWrapper, Projects, ProjectLinks, Project
 import { Subtitle } from '../elements'
 
 const AboutTitle = styled.h1`
-  ${tw`w-3/4 text-5xl my-1 px-8 tracking-wide relative inline-block text-center`};
-  background: #ffffff;
+  ${tw`md:w-1/2 lg:text-5xl text-3xl my-1 px-8 tracking-wide relative inline-block bg-white`};
   box-decoration-break: clone;
 `
 
