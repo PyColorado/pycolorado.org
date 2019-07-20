@@ -4,21 +4,10 @@ import styled from 'styled-components'
 import tw from 'tailwind.macro'
 import { DividerMiddle } from '../elements/Dividers'
 import { Content } from '../elements'
-import Inner from '../elements/Inner'
 import TopoBlueBG from '../images/topo-blue.svg'
 
 const ProjectsWrapper = styled.div`
-  ${tw`flex flex-wrap justify-between`};
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(1, 1fr);
-  @media (max-width: 1200px) {
-    grid-gap: 1rem;
-  }
-  @media (max-width: 900px) {
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
-  }
+  ${tw`flex flex-wrap justify-center -mx-32`};
 `
 
 const ProjectLinks = styled.h5`
@@ -29,12 +18,11 @@ const ProjectLinks = styled.h5`
 `
 
 const Wrapper = styled.div`
-  ${tw`relative no-underline p-8 text-white`};
+  ${tw`w-1/4 shadow-lg m-4 p-8 z-50`};
   background: ${props => props.bg};
-  border: solid 5px #1f506e;
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
   &:hover {
-    ${tw`shadow-lg`};
     transform: translateY(-1px);
     transition: all 250ms ease-in;
   }
@@ -54,8 +42,13 @@ const Wrapper = styled.div`
   }
 `
 
+const Inner = styled.div`
+  ${tw`w-full xl:w-4/5 text-center lg:text-left mt-8 mb-8`};
+  background: ${props => props.bg};
+`
+
 const Title = styled.div`
-  ${tw`text-blue-900 uppercase text-2xl md:text-3xl xl:text-4xl tracking-wide font-serif mb-6`};
+  ${tw`text-blue-900 text-lg md:text-2xl tracking-wide font-serif mb-6`};
   font-weight: 600;
 `
 

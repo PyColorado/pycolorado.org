@@ -3,10 +3,27 @@ import styled from 'styled-components'
 import tw from 'tailwind.macro'
 import { Layout, Wordmark } from '../components'
 import { About, Hero, Sponsors, ProjectsWrapper, Projects, ProjectLinks, ProjectCard } from '../views'
-import { Subtitle } from '../elements'
+import { SectionTitle } from '../elements'
 
-const AboutTitle = styled.h1`
-  ${tw`md:w-1/2 lg:text-5xl text-3xl my-1 px-8 tracking-wide relative inline-block bg-white`};
+
+const HeroHeroTitleWrapper = styled.div`
+  ${tw`absolute inset-x-0`};
+  bottom: 4.5rem;
+  @media (min-width: 768px) {
+    bottom: 2.5rem;
+  }
+`
+
+const HeroTitle = styled.h1`
+  ${tw`md:text-5xl text-3xl text-white text-center font-bold leading-none`};
+
+  span {
+    ${tw`md:text-3xl text-lg font-normal`};
+  }
+`
+
+const AboutHeroTitle = styled.h1`
+  ${tw`md:w-1/2 lg:text-5xl text-3xl my-1 px-8relative inline-block bg-white`};
   box-decoration-break: clone;
 `
 
@@ -20,43 +37,40 @@ const Index = ({ location }) => (
     <Layout position="centered" location={location}>
       <Hero>
         <Wordmark />
-        <Subtitle>September 7 - 8, 2019 &nbsp;</Subtitle>
+        <HeroHeroTitleWrapper>
+          <HeroTitle>September 6, 7 & 8 <br /> <span>The Studio Loft | Denver, CO</span></HeroTitle>
+        </HeroHeroTitleWrapper>
       </Hero>
 
-      <Sponsors />
-
       <Projects>
+        <div style={tw`flex mb-4`}>
+          <SectionTitle style={tw`flex-1 w-full`}>Featured Speakers ― </SectionTitle>
+        </div>
         <ProjectsWrapper>
+          
+
           <ProjectCard title="Sponsor" link="" bg="white">
-            PyColorado is a community driven event made possible by the generosity of our sponsors! There are a few
-            sponsor levels remaining. If you, or your company are interested in supporting conferences like PyColorado,
-            please get in touch with us today!
-            <ProjectLinks>
-              <a className="fancy" href="/PyColorado_2019_-_Sponsorship_Prospectus.pdf" target="_blank">Sponsorship Prospectus</a>
-            </ProjectLinks>
+            <ProjectLinks></ProjectLinks>
           </ProjectCard>
 
           <ProjectCard title="Attend" link="" bg="white">
-            Ready to start your journey to PyColorado? Well, grab your trekking poles, fill your Nalgenes, and lace up
-            your boots! This year's venue is the <a className="fancy" href="http://www.artscomplex.com/venues/detail/studio-loft" target="_blank">Studio Loft</a>,
-            conveniently located in the heart of downtown Denver.
-            <ProjectLinks>
-              <a className="fancy" href="https://ti.to/pycolorado/pycolorado-2019" target="_blank">Purchase Tickets</a>
-            </ProjectLinks>
+            <ProjectLinks></ProjectLinks>
           </ProjectCard>
 
           <ProjectCard title="Volunteer" link="" bg="white">
-            Community driven conferences, such as PyColorado are only succesful thanks to an army of volunteers.
-            Interested in helping? Just fill out the form after the jump!
-            <ProjectLinks>
-              <a className="fancy" href="https://pycolorado.typeform.com/to/hzgBVt" target="_blank">Volunteer Registration</a>
-            </ProjectLinks>
+            <ProjectLinks></ProjectLinks>
+          </ProjectCard>
+
+          <ProjectCard title="Volunteer" link="" bg="white">
+            <ProjectLinks></ProjectLinks>
           </ProjectCard>
         </ProjectsWrapper>
       </Projects>
 
+      <Sponsors />
+
       <About>
-        <AboutTitle>About PyColorado</AboutTitle>
+        <AboutHeroTitle>About PyColorado</AboutHeroTitle>
         <AboutDesc>
           PyColorado is a regional Python conference to bring together the community of Python users and developers in the
           Front Range region of the Rocky Mountains. Python is a popular open-source programming language with many users

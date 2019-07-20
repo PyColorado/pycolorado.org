@@ -12,6 +12,12 @@ export const BigTitle = styled.h1`
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
 `
 
+export const SectionTitle = styled.h1`
+  ${tw`text-5xl lg:text-6xl text-white mb-6 tracking-wide z-50 px-2`};
+  color: #1f506e;
+  background-color: rgba(255, 255, 246, 0.975);
+`
+
 export const Subtitle = styled.div`
   ${tw`text-right md:-mt-8 -mt-4 md:text-3xl text-xl font-bold text-blue-900 uppercase`};
 `
