@@ -8,12 +8,12 @@ export const Content = styled.div`
 `
 
 export const PageContent = styled.div`
-  ${tw`xl:p-24 h-screen justify-center items-center flex z-50`};
+  ${tw`h-screen justify-center items-center flex z-50 mt-16`};
   background: ${props => props.bg};
   ${props => (props.height ? `height : ${props.height}` : null)};
 `
 
 export const Section = styled.div`
-  ${tw`lg:w-3/4 w-full text-left mt-24 md:p-16 p-4 z-0`};
+  ${tw`lg:w-3/4 w-11/12 text-left mt-24 md:p-16 p-4 z-0 shadow-lg`};
   background: ${props => props.bg};
 `

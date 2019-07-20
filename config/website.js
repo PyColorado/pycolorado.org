@@ -16,6 +16,7 @@ module.exports = {
   ogSiteName: 'pycolorado',
   ogLanguage: 'en_US',
   googleAnalyticsID: 'UA-142670998-1',
+  titoBaseURL: 'https://ti.to/pycolorado/pycolorado-2019',
 
   // Manifest and Progress color
   themeColor: tailwind.theme.colors.primary,

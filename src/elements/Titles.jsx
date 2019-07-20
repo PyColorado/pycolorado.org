@@ -13,7 +13,7 @@ export const BigTitle = styled.h1`
 `
 
 export const Subtitle = styled.div`
-  ${tw`text-right md:-mt-8 -mt-4 md:text-3xl text-xl font-bold text-blue-900  uppercase`};
+  ${tw`text-right md:-mt-8 -mt-4 md:text-3xl text-xl font-bold text-blue-900 uppercase`};
 `
 
 const PageTitleHeading = styled.h1`
@@ -28,6 +28,6 @@ const Scale = styled.div`
 export const PageTitle = ({ title }) => (
   <>
     <PageTitleHeading>{title}</PageTitleHeading>
-    <Scale bg={`url(${scale}) no-repeat center center;`} />
+    <Scale bg={`url(${scale}) no-repeat center center; background-size: contain;`} />
   </>
 )
