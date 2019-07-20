@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
-import { Layout, NavBar } from '../components'
+import { Layout } from '../components'
 import TopoBlueBG from '../images/topo-blue.svg'
 import { PageTitle, DividerTop, PageContent, Section } from '../elements'
 import faq from '../data/faq.json'
@@ -73,8 +73,7 @@ class FAQ extends Component {
 
     return (
       <>
-        <Layout>
-          <NavBar showLogo theme="lighten" location={location} />
+        <Layout showLogo theme="lighten" location={location}>
           <DividerTop bg={`#fffff6 url(${TopoBlueBG}); background-size: cover;`} />
           <PageContent height="auto">
             <Section bg="white">

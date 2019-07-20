@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
-import { Layout, NavBar, Wordmark } from '../components'
+import { Layout, Wordmark } from '../components'
 import { About, Hero, Sponsors, ProjectsWrapper, Projects, ProjectLinks, ProjectCard } from '../views'
 import { Subtitle } from '../elements'
 
@@ -17,8 +17,7 @@ const AboutDesc = styled.p`
 
 const Index = ({ location }) => (
   <>
-    <Layout>
-      <NavBar centered theme="dark" location={location} />
+    <Layout position="centered" location={location}>
       <Hero>
         <Wordmark />
         <Subtitle>September 7 - 8, 2019 &nbsp;</Subtitle>
