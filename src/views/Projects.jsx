@@ -7,7 +7,7 @@ import { Content } from '../elements'
 import TopoBlueBG from '../images/topo-blue.svg'
 
 const ProjectsWrapper = styled.div`
-  ${tw`flex flex-wrap -mx-1 overflow-hidden`};
+  ${tw`flex flex-wrap -mx-1`};
 `
 
 const ProjectLinks = styled.h5`
@@ -18,7 +18,7 @@ const ProjectLinks = styled.h5`
 `
 
 const Wrapper = styled.div`
-  ${tw`my-1 p-4 overflow-hidden w-full md:w-1/2 lg:w-1/3 xl:w-1/3 z-50`};
+  ${tw`my-1 p-4 w-full md:w-1/2 lg:w-1/3 xl:w-1/3 z-50`};
   background: ${props => props.bg};
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
@@ -55,7 +55,7 @@ const Title = styled.div`
 
 const Projects = ({ children }) => (
   <>
-    <DividerMiddle bg={`#fffff6 url(${TopoBlueBG}); background-size: cover;`} />
+    <DividerMiddle style={tw`z-10`} bg={`#fffff6 url(${TopoBlueBG}); background-size: cover;`} />
     <Content height="auto">
       <Inner>{children}</Inner>
     </Content>

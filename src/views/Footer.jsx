@@ -29,7 +29,7 @@ const MapText = styled.div`
 `
 
 const Footer = () => (
-  <div style={tw`mt-48`}>
+  <div style={tw`md:mt-8 mt-64`}>
     <PendantWrapper>
       <Pendant />
     </PendantWrapper>

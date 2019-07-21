@@ -22,13 +22,8 @@ const HeroTitle = styled.h1`
   }
 `
 
-const AboutHeroTitle = styled.h1`
-  ${tw`md:w-1/2 lg:text-5xl text-3xl my-1 px-8relative inline-block bg-white`};
-  box-decoration-break: clone;
-`
-
 const AboutDesc = styled.p`
-  ${tw`text-lg md:text-xl lg:text-2xl p-8 font-sans relative bg-white`};
+  ${tw`text-base text-left md:text-xl lg:text-2xl md:p-8 p-4 font-sans relative bg-white`};
   box-decoration-break: clone;
 `
 
@@ -37,7 +32,7 @@ const speakersWithHeadshots = schedule.reduce((acc, currentValue) => {
   return acc
 }, [])
 
-const featuredSpeakers = speakersWithHeadshots.sort(() => 0.5 - Math.random()).slice(0, 6)
+const featuredSpeakers = speakersWithHeadshots.slice(0, 6)
 
 const Index = ({ location }) => (
   <>
@@ -69,7 +64,7 @@ const Index = ({ location }) => (
       </Sponsors>
 
       <About>
-        <div style={tw`flex mt-48 mb-4`}>
+        <div style={tw`flex mt-16`}>
           <SectionTitle color="#fffff6" bg="rgba(35, 38, 43, 0.95);" style={tw`flex-1 w-full`}>About PyCO ― </SectionTitle>
         </div>
         <AboutDesc>

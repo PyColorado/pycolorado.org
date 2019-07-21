@@ -23,7 +23,7 @@ const Wrapper = styled.a`
   }
 
   &.front-range {
-    ${tw`md:w-1/4 w-1/2 h-32 p-8`};
+    ${tw`md:w-1/4 w-2/3 h-32 p-8`};
 
     &:hover {
       ${tw`shadow-xl`}
