@@ -121,7 +121,7 @@ const MobileMenu = styled.div`
     }
 
     a {
-      ${tw`md:text-2xl text-4xl`};
+      ${tw`md:text-2xl text-3xl`};
     }
   }
 `
@@ -137,6 +137,10 @@ const NavLink = styled(props => <Link {...props} />)`
 const MobileNavLink = styled(props => <Link {...props} />)`
   ${tw`py-2 m-2 my-6 font-sans font-bold text-white block`};
   animation: ${fadeInUpAnimation};
+
+  &.active {
+    text-decoration: underline;
+  }
 `
 
 const LogoWrapper = styled.div`
@@ -153,7 +157,7 @@ const NavButton = styled.a`
 
   &.mobile {
     ${tw`block md:w-10/12 w-10/12 md:text-2xl text-4xl normal-case ml-2 absolute`};
-    bottom: 2rem;
+    bottom: 8rem;
     animation: ${fadeInUpAnimation};
   }
 `

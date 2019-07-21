@@ -9,7 +9,7 @@ const Inner = styled.div`
 `
 
 const PendantWrapper = styled.div`
-  ${tw`mx-auto md:w-1/5 w-1/2 md:mt-12 mt-48 opacity-25`};
+  ${tw`mx-auto md:w-1/5 w-1/2 md:mt-12 mt-64 opacity-25`};
 `
 
 const ContactText = styled.div`
@@ -17,7 +17,7 @@ const ContactText = styled.div`
 `
 
 const MapText = styled.div`
-  ${tw`text-center text-alt-white mt-8 p-2 font-mono md:text-sm text-xs text-blue-100 opacity-25`};
+  ${tw`text-center text-alt-white mt-8 p-2 font-mono md:text-sm text-xs text-blue-100 opacity-25 md:block hidden`};
 
   > h2 {
     ${tw`font-mono text-alt-white text-xl font-bold text-blue-100`}
@@ -29,7 +29,7 @@ const MapText = styled.div`
 `
 
 const Footer = () => (
-  <>
+  <div style={tw`md:mt-8 mt-64`}>
     <PendantWrapper>
       <Pendant />
     </PendantWrapper>
@@ -64,7 +64,7 @@ const Footer = () => (
         </ContactText>
       </Inner>
     </Contact>
-  </>
+  </div>
 )
 
 export default Footer
