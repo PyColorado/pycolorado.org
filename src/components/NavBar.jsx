@@ -153,7 +153,7 @@ const NavButton = styled.a`
 
   &.mobile {
     ${tw`block md:w-10/12 w-10/12 md:text-2xl text-4xl normal-case ml-2 absolute`};
-    bottom: 2rem;
+    bottom: 6rem;
     animation: ${fadeInUpAnimation};
   }
 `

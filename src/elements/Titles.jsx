@@ -13,9 +13,9 @@ export const BigTitle = styled.h1`
 `
 
 export const SectionTitle = styled.h1`
-  ${tw`text-5xl lg:text-6xl text-white mb-6 tracking-wide z-50 px-2`};
-  color: #1f506e;
-  background-color: rgba(255, 255, 246, 0.975);
+  ${tw`lg:text-6xl text-3xl text-left text-white mb-6 tracking-wide z-50 p-4 leading-none`};
+  color: ${props => props.color || '#1f506e'};
+  background-color: ${props => props.bg || 'rgba(255, 255, 246, 0.9)'};
 `
 
 export const Subtitle = styled.div`

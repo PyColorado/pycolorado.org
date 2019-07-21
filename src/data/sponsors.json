@@ -1,0 +1,28 @@
+
+{
+    "summit": [
+        {
+            "name": "Cuttlesoft",
+            "link": "https://cuttlesoft.com/",
+            "img": "cuttlesoft.svg"
+        }
+    ],
+    "peak": [],
+    "front_range": [
+        {
+            "name": "Occipital",
+            "link": "https://occipital.com/",
+            "img": "occipital.png"
+        },
+        {
+            "name": "Linode",
+            "link": "https://linode.com/",
+            "img": "linode.png"
+        },
+        {
+            "name": "The PSF",
+            "link": "https://www.python.org/psf/",
+            "img": "psf.png"
+        }
+    ]
+}

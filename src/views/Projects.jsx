@@ -7,7 +7,7 @@ import { Content } from '../elements'
 import TopoBlueBG from '../images/topo-blue.svg'
 
 const ProjectsWrapper = styled.div`
-  ${tw`flex flex-wrap justify-center -mx-32`};
+  ${tw`flex flex-wrap -mx-1 overflow-hidden`};
 `
 
 const ProjectLinks = styled.h5`
@@ -18,42 +18,39 @@ const ProjectLinks = styled.h5`
 `
 
 const Wrapper = styled.div`
-  ${tw`w-1/4 shadow-lg m-4 p-8 z-50`};
+  ${tw`my-1 p-4 overflow-hidden w-full md:w-1/2 lg:w-1/3 xl:w-1/3 z-50`};
   background: ${props => props.bg};
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  
+
   &:hover {
     transform: translateY(-1px);
     transition: all 250ms ease-in;
-  }
 
-  a {
-    color: #1f506e;
-    border-bottom: 2px dotted #1f506e;
-    font-weight: 700;
-  }
-
-  a:hover {
-    border-bottom: 2px dotted transparent;
-  }
-
-  a:before {
-    background-color: #1f506e;
+    div.__image {
+      filter: grayscale(0%);
+      background-size: 100%;
+    }
   }
 `
 
+const Image = styled.div`
+  ${tw`w-full h-48`};
+  background-image:url('${props => props.bg}');
+  background-repeat:no-repeat;
+  background-size: 105%;
+  background-position: top center;
+  filter: grayscale(100%);
+  transition: all 250ms ease-in;
+`
+
 const Inner = styled.div`
-  ${tw`w-full xl:w-4/5 text-center lg:text-left mt-8 mb-8`};
+  ${tw`xl:w-4/5 w-full text-center lg:text-left mt-8 mb-8`};
   background: ${props => props.bg};
 `
 
 const Title = styled.div`
-  ${tw`text-blue-900 text-lg md:text-2xl tracking-wide font-serif mb-6`};
+  ${tw`text-blue-900 text-lg md:text-2xl mt-8 tracking-wide font-serif`};
   font-weight: 600;
-`
-
-const Text = styled.div`
-  ${tw`text-black font-sans text-lg leading-normal`};
 `
 
 const Projects = ({ children }) => (
@@ -65,10 +62,12 @@ const Projects = ({ children }) => (
   </>
 )
 
-const ProjectCard = ({ title, link, children, bg }) => (
+const ProjectCard = ({ title, img, bg }) => (
   <Wrapper bg={bg}>
-    <Title>{title}</Title>
-    <Text>{children}</Text>
+    <div style={tw`bg-white p-4`}>
+      <Image className="__image" bg={`/headshots/${img}`} />
+      <Title>{title}</Title>
+    </div>
   </Wrapper>
 )
 

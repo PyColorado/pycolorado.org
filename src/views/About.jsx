@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import tw from 'tailwind.macro'
 import { Divider } from '../elements/Dividers'
 import { Content } from '../elements'
 import Inner from '../elements/Inner'
@@ -28,7 +29,7 @@ const About = ({ children }) => (
       <SVG icon="hexa" width={8} stroke={colors['white']} left="80%" top="70%" /> */}
     </Divider>
     <Content>
-      <Inner>{children}</Inner>
+      <Inner style={tw`md:mb-72 mb-48`}>{children}</Inner>
     </Content>
   </>
 )
