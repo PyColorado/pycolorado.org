@@ -41,7 +41,7 @@ const Index = ({ location }) => (
         <Wordmark />
         <HeroHeroTitleWrapper>
           <HeroTitle>
-            September 6, 7 & 8 <br /> <span>The Studio Loft | Denver, CO</span>
+            September 6, 7 &amp; 8 <br /> <span>The Studio Loft | Denver, CO</span>
           </HeroTitle>
         </HeroHeroTitleWrapper>
       </Hero>
@@ -52,20 +52,24 @@ const Index = ({ location }) => (
         </div>
         <ProjectsWrapper>
           {featuredSpeakers.map(talk => (
-            <ProjectCard key={talk.order} title={talk.speaker} img={talk.headshot} bg="" />
+            <ProjectCard key={talk.order} title={talk.speaker} link={talk.linkedin_profile} img={talk.headshot} bg="" />
           ))}
         </ProjectsWrapper>
       </Projects>
 
       <Sponsors>
         <div style={tw`flex mb-4`}>
-          <SectionTitle color="#fffff6" bg="transparent" style={tw`flex-1 w-full`}>Sponsored By ― </SectionTitle>
+          <SectionTitle color="#fffff6" bg="transparent" style={tw`flex-1 w-full`}>
+            Sponsored By ―{' '}
+          </SectionTitle>
         </div>
       </Sponsors>
 
       <About>
         <div style={tw`flex mt-16`}>
-          <SectionTitle color="#fffff6" bg="rgba(35, 38, 43, 0.95);" style={tw`flex-1 w-full`}>About PyCO ― </SectionTitle>
+          <SectionTitle color="#fffff6" bg="rgba(35, 38, 43, 0.95);" style={tw`flex-1 w-full`}>
+            About PyCO ―{' '}
+          </SectionTitle>
         </div>
         <AboutDesc>
           PyColorado is a regional Python conference to bring together the community of Python users and developers in

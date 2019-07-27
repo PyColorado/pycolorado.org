@@ -75,6 +75,18 @@ const Sponsors = ({ children }) => (
             <SponsorCard level="front-range" key={i} name={sponsor.name} img={sponsor.img} link={sponsor.link} />
           ))}
         </SponsorsWrapper>
+
+
+        <div style={tw`flex mt-8 md:p-24 p-2 text-center`}>
+          <p style={tw`z-50 text-white`}>
+            Want to sponsor PyColorado? Check out our{' '}
+            <a style={tw`underline text-white`} href="/PyColorado_2019_-_Sponsorship_Prospectus.pdf">
+              Sponsorship Prospectus
+            </a>{' '}
+            or email us at{' '}
+            <a style={tw`underline text-white`} href="mailto:sponsor@pycolorado.org">sponsor@pycolorado.org</a>
+          </p>
+        </div>
       </Inner>
     </Content>
   </>
