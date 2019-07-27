@@ -11,7 +11,8 @@ const SponsorsWrapper = styled.div`
 `
 
 const Wrapper = styled.a`
-  ${tw`md:w-1/4 w-3/5p-2 z-50`};
+  ${tw`md:w-1/4 w-3/5p-2 z-50 rounded`};
+  background: #1f506e;
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
   &.summit {
@@ -49,15 +50,6 @@ const Inner = styled.div`
   background: ${props => props.bg};
 `
 
-const Title = styled.div`
-  ${tw`text-blue-900 text-lg md:text-2xl mt-8 tracking-wide font-serif`};
-  font-weight: 600;
-`
-
-const Text = styled.div`
-  ${tw`text-black font-sans text-lg leading-normal`};
-`
-
 const Sponsors = ({ children }) => (
   <>
     <DividerMiddle />
@@ -65,14 +57,20 @@ const Sponsors = ({ children }) => (
       <Inner>
         {children}
         <SponsorsWrapper>
-          {sponsors.summit.map((sponsor, i) => (
-            <SponsorCard level="summit" key={i} name={sponsor.name} img={sponsor.img} link={sponsor.link} />
+          {sponsors.summit.map(sponsor => (
+            <SponsorCard level="summit" key={sponsor.name} name={sponsor.name} img={sponsor.img} link={sponsor.link} />
           ))}
         </SponsorsWrapper>
 
         <SponsorsWrapper>
-          {sponsors.front_range.map((sponsor, i) => (
-            <SponsorCard level="front-range" key={i} name={sponsor.name} img={sponsor.img} link={sponsor.link} />
+          {sponsors.front_range.map(sponsor => (
+            <SponsorCard
+              level="front-range"
+              key={sponsor.name}
+              name={sponsor.name}
+              img={sponsor.img}
+              link={sponsor.link}
+            />
           ))}
         </SponsorsWrapper>
 
@@ -94,7 +92,7 @@ const Sponsors = ({ children }) => (
 
 const SponsorCard = ({ level, name, img, link }) => (
   <Wrapper className={level} href={link}>
-    <Image className="__image" bg={`/sponsors/${img}`}/>
+    <Image className="__image" bg={`/sponsors/${img}`} />
   </Wrapper>
 )
 
