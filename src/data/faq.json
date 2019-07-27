@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Registration",
+        "questions": [
+            {
+                "question": "Where is the conference?",
+                "answer": "Main conference days are held at the Studio Loft at Ellie Caulkins Opera House. The Studio Loft is located in beautiful, Downtown Denver between The Colorado Convention Center and Sculpture Park.\r\n\r\nFrom the Studio Loft you can easily enjoy a meal on the 16th Street (just 2 blocks away), see the picturesque panaroma of the Front Range, or get anywhere in Denver from 1 of 3 easy to reach Light Rail stations.\r\n\r\nWe're still searching for locations to hold our Pre-Conference Workshops. If your company would like to help PyColorado and can accomodate 40-80 people classroom style 9\/6. Please email us at <a href=\"mailto:hello@pycolorado.org\">hello@pycolorado.org<\/>."
+            },
+            {
+                "question": "How much are conference passes?",
+                "answer": "<ul>\r\n  <li>There will be 30 Early bird passes in total. They will go on sale in blocks of 10 every two weeks starting April 1, 2019, until sold out.<\/li>\r\n  <li>Regular conference passes will go on sale April, 22, 2019, until sold out.<\/li>\r\n  <li>Regular conference passes are $50 for Student passes, $125 for Individual passes, and $250 for Corporate passes.<\/li>\r\n  <li>You can support members of the community by purchasing a <strong>Plus One<\/strong> pass for $250. The purchase of a Plus One ticket provides a ticket for you and one for a member of our community who otherwise would be unable to attend PyColorado.<\/li>\r\n<\/ul>"
+            },
+            {
+                "question": "What is the difference between the Corporate Individual, and Student Passes?",
+                "answer": "<ul>\r\n<li><strong>Corporate Pass:<\/strong> You're purchasing on behalf of a commercial organization, or attendance to PyColorado covered by your employer, or you can expense\/write-off the cost.<\/li>\r\n<li><strong>Individual Pass:<\/strong> You're a professional attending PyColorado and cannot have the ticket cost expensed or covered by your employer or organization.<\/li>\r\n<li><strong>Student Pass:<\/strong> You're a student, in between jobs, a working professional at a non-profit, or otherwise cannot purchase a ticket at full value.<\/li>\r\n<\/ul>"
+            },
+            {
+                "question": "Can I buy an Individual or Student Pass if my company is reimbursing me?",
+                "answer": "In truth, no one would know, but please don't abuse resources that could support fellow members of the community."
+            },
+            {
+                "question": "Are workshops an additional cost?",
+                "answer": "Yes. Workshops will cost $150 to attend. A regular conference pass is not required to puchase workshop passes, but we hope you'd come to both!"
+            },
+            {
+                "question": "What about scholarships, or discounts for volunteers?",
+                "answer": "PyColorado Organizers actively seek sponsorships year round so the conference can receive adequate funding for both operating costs and supporting members of our community.\r\n\r\nFundraising helps us provide assistance through financial aid via offset costs for Student level Passes, and merit-based Diversity and Inclusion Scholarships. To apply for Financial Aid, please email us at \r\n\r\nAdditionally, PyColorado can support up to 10 volunteer organizers that materially support with the planning and execution of the conference. For all other volunteers, we offer a 20% discount on your ticket price. If you are interested in helping out, visit the <a href=\"https:\/\/pycolorado.typeform.com\/to\/hzgBVt\">Volunteer Registration Form<\/a>."
+            }
+        ]
+    },
+    {
+        "name": "Community Support",
+        "questions": [
+            {
+                "question": "I want to get involved or support the conference.",
+                "answer": "Great! Community run conferences are often organized by small teams of dedicated volunteers and need all the help they can get.\r\n\r\n<br />Some ways of helping:\r\n\r\n<ul class=\"bulleted\">\r\n  <li>Spread the word! Tweet, Email, or put up billboards! The more folks that know about PyColorado, the better!<\/li>\r\n  <li>Follow @pycolorado and #pyco2019 on Twitter.<\/li>\r\n  <li><a href=\"https:\/\/www.papercall.io\/pycolorado\" target=\"_blank\">Submit a talk or workshop.<\/a><\/li>\r\n  <li>Host a workshop.<\/li>\r\n  <li><a href=\"https:\/\/pycolorado.typeform.com\/to\/hzgBVt\" target=\"_blank\">Register as a volunteer.<\/a><\/li>\r\n  <li>Purchase a Corporate Pass if you can.<\/li>\r\n  <li>Connect us to potential sponsors; <code>CC: <a href=\"mailto:?cc=sponsor@pycolorado.org\">sponsor@pycolorado.org<\/a><\/code><\/li>\r\n<\/ul>"
+            },
+            {
+                "question": "I'd like to support diversity efforts at PyColorado. What can I do?",
+                "answer": "<p>Awesome! The diverse talents in the Python community must be recognized and celebrated.<\/p> \r\n\r\n<p> If you're passionate about supporting all members of our commmunity, please email us at <a href=\"mailto:sponsor+diversity@pycolorado.org?subject=I want to help with Diversity at PyColorado\">Diversity Sponsorships<\/a>, and help us with our efforts!<\/p>\r\n\r\n<p>\r\n    If you'd like to make a personal donation that goes directly towards improving PyColorado's mission of Diversity and Inclusion, please <a href=\"mailto:sponsor+diversity@pycolorado.org?subject=I want to donate towards Diversity at PyColorado\">click here.<\/a>\r\n<\/p>"
+            }
+        ]
+    }
+]
+
+
+

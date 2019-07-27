@@ -1,13 +1,16 @@
 import React from 'react'
-import GlobalStyle from '../styles/global'
 import SEO from './SEO'
-import 'typeface-halant'
-import 'typeface-nunito-sans'
+import NavBar from './NavBar'
+import Footer from '../views/Footer'
 
-const Layout = () => (
+import('../styles/main.scss')
+
+const Layout = ({ children, position, showLogo, theme, location }) => (
   <>
     <SEO />
-    <GlobalStyle />
+    <NavBar position={position} showLogo={showLogo} theme={theme} location={location} />
+    {children}
+    <Footer />
   </>
 )
 

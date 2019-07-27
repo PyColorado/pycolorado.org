@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Divider } from '../elements/Dividers'
-import Content from '../elements/Content'
+import { Content } from '../elements'
 
 const Contact = ({ children }) => (
   <>
@@ -15,5 +15,5 @@ export default Contact
 
 Contact.propTypes = {
   children: PropTypes.node.isRequired,
-  offset: PropTypes.number.isRequired,
+  // offset: PropTypes.number.isRequired,
 }
