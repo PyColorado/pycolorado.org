@@ -38,7 +38,7 @@ const Index = ({ location }) => (
         <Wordmark />
         <HeroTitleWrapper>
           <HeroTitle>
-            September 6, 7 & 8 <br /> <span>The Studio Loft | Denver, CO</span>
+            September 6, 7 &amp; 8 <br /> <span>The Studio Loft | Denver, CO</span>
           </HeroTitle>
         </HeroTitleWrapper>
       </Hero>
@@ -49,7 +49,7 @@ const Index = ({ location }) => (
         </div>
         <ProjectsWrapper>
           {featuredSpeakers.map(talk => (
-            <ProjectCard key={talk.order} title={talk.speaker} img={talk.headshot} bg="" />
+            <ProjectCard key={talk.order} title={talk.speaker} link={talk.linkedin_profile} img={talk.headshot} bg="" />
           ))}
         </ProjectsWrapper>
       </Projects>

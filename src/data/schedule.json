@@ -8,7 +8,8 @@
     "speaker": "Chris Luiz",
     "blurb": "This workshop delivers value for beginners, web developers, and data scientists via an intro to the Python scientific and data analysis stack, Flask, data acquisition/processing, and a means to knit them together. It is widely accessible and touches on several interests of the community.",
     "linkedin_profile": "https://www.linkedin.com/in/christopher-luiz/",
-    "headshot": "luiz_headshot.jpeg"
+    "headshot": "luiz_headshot.jpeg",
+    "tickets": "https://ti.to/pycolorado/pycolorado-2019/with/lxkvhwrpxmc"
   },
   {
     "type": "Workshop",
@@ -19,16 +20,17 @@
     "speaker": "Uche Ogbuji",
     "blurb": "Python developers should learn effective use of the iterator protocol when crunching large datasets. The lineage of such techniques extends to Python 3\u2019s asyncio, valuable in boosting network applications. This workshop progresses from a firm grounding in iterators through generators & asyncio.",
     "linkedin_profile": "https://www.linkedin.com/in/ucheogbuji/",
-    "headshot": "ogbuji_headshot.jpeg"
+    "headshot": "ogbuji_headshot.jpeg",
+    "tickets": "https://ti.to/pycolorado/pycolorado-2019/with/d6waubmhais"
   },
   {
     "type": "Keynote",
     "day": "Saturday",
     "order": "3",
     "time": "9:30am - 10:10am",
-    "title": "Untitled",
+    "title": "Keynote",
     "speaker": "Ewa Jodlowska",
-    "blurb": "?",
+    "blurb": "",
     "linkedin_profile": "https://www.linkedin.com/in/ewa-jodlowska-39810611/",
     "headshot": "jodlowska_headshot.jpeg"
   },
@@ -45,14 +47,14 @@
   },
   {
     "type": "Regular Talk",
-    "day": "Saturday",
-    "order": "5",
-    "time": "11:00am - 11:30am",
-    "title": "Pandas May Be Slow, but Pandas Doesn't Have to Be",
-    "speaker": "Andrew Vaccaro",
-    "blurb": "Python is quickly becoming the de-facto language of data science. Pandas is one of the most popular libraries for managing and transforming data, but many users are unaware of strategies to tune pandas for performance. Simple changes can greatly speed up data processing when applied correctly.",
-    "linkedin_profile": "https://www.linkedin.com/in/andrew-vaccaro-510187103/",
-    "headshot": "vaccaro_headshot.jpeg"
+    "day": "Sunday",
+    "order": "15",
+    "time": "1:20pm - 1:50pm",
+    "title": "Advanced asyncio: Solving Real-World Production Problems",
+    "speaker": "Lynn Root",
+    "blurb": "Everyone\u2019s talking about it. Everyone\u2019s using it. But most likely, they\u2019re doing it wrong, just like we did.\n\nBy building a simplified chaos monkey service, we will walk through how to create a good foundation for an asyncio-based service, including graceful shutdowns, proper exception handling, and testing asynchronous code. We\u2019ll get into the hairier topics as well, covering topics like working with synchronous code, debugging and profiling, and working with threaded code. We\u2019ll learn how to approach asynchronous and concurrent programming with Python\u2019s asyncio library, take away some best practices, and learn what pitfalls to avoid.",
+    "linkedin_profile": "https://www.linkedin.com/in/lynnroot/",
+    "headshot": "root_headshot.jpeg"
   },
   {
     "type": "Regular Talk",
@@ -64,6 +66,17 @@
     "blurb": "The strengths and weaknesses of Python lend themselves to a different style of object oriented programming. By accepting several constraints on how we design and implement classes, we make our code more robust, more testable, and easier to adapt to changing circumstances",
     "linkedin_profile": "https://www.linkedin.com/in/moshezadka/",
     "headshot": "zadka_headshot.jpg"
+  },
+  {
+    "type": "Regular Talk",
+    "day": "Saturday",
+    "order": "5",
+    "time": "11:00am - 11:30am",
+    "title": "Pandas May Be Slow, but Pandas Doesn't Have to Be",
+    "speaker": "Andrew Vaccaro",
+    "blurb": "Python is quickly becoming the de-facto language of data science. Pandas is one of the most popular libraries for managing and transforming data, but many users are unaware of strategies to tune pandas for performance. Simple changes can greatly speed up data processing when applied correctly.",
+    "linkedin_profile": "https://www.linkedin.com/in/andrew-vaccaro-510187103/",
+    "headshot": "vaccaro_headshot.jpeg"
   },
   {
     "type": "Regular Talk",
@@ -152,17 +165,6 @@
     "blurb": "How does Python fit among programming languages? We\u2019ll start with a zoomed out view of programming language trends and then drill into Python specifically. Our goal is to explore where, why and how Python being used, and then discuss future opportunities and threats to the language.",
     "linkedin_profile": "https://www.linkedin.com/in/rachelstephens/",
     "headshot": "stephens_headshot.jpeg"
-  },
-  {
-    "type": "Regular Talk",
-    "day": "Sunday",
-    "order": "15",
-    "time": "1:20pm - 1:50pm",
-    "title": "Advanced asyncio: Solving Real-World Production Problems",
-    "speaker": "Lynn Root",
-    "blurb": "Everyone\u2019s talking about it. Everyone\u2019s using it. But most likely, they\u2019re doing it wrong, just like we did.\n\nBy building a simplified chaos monkey service, we will walk through how to create a good foundation for an asyncio-based service, including graceful shutdowns, proper exception handling, and testing asynchronous code. We\u2019ll get into the hairier topics as well, covering topics like working with synchronous code, debugging and profiling, and working with threaded code. We\u2019ll learn how to approach asynchronous and concurrent programming with Python\u2019s asyncio library, take away some best practices, and learn what pitfalls to avoid.",
-    "linkedin_profile": "https://www.linkedin.com/in/lynnroot/",
-    "headshot": "root_headshot.jpeg"
   },
   {
     "type": "Regular Talk",

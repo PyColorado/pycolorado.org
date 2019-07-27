@@ -19,7 +19,7 @@ const ProjectLinks = styled.h5`
 
 const Wrapper = styled.div`
   ${tw`my-1 p-4 w-full md:w-1/2 lg:w-1/3 xl:w-1/3 z-50`};
-  background: ${props => props.bg};
+  background: ${props => props.bg} center center;
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
   &:hover {
@@ -34,11 +34,11 @@ const Wrapper = styled.div`
 `
 
 const Image = styled.div`
-  ${tw`w-full h-48`};
+  ${tw`w-full h-64`};
   background-image:url('${props => props.bg}');
   background-repeat:no-repeat;
   background-size: 105%;
-  background-position: top center;
+  background-position: center center;
   filter: grayscale(100%);
   transition: all 250ms ease-in;
 `
@@ -62,9 +62,14 @@ const Projects = ({ children }) => (
   </>
 )
 
-const ProjectCard = ({ title, img, bg }) => (
+const ProjectCard = ({ title, link, img, bg }) => (
   <Wrapper bg={bg}>
-    <div style={tw`bg-white p-4`}>
+    <div
+      style={tw`bg-white p-4 cursor-pointer`}
+      onClick={() => {
+        window.open(link, '_blank')
+      }}
+    >
       <Image className="__image" bg={`/headshots/${img}`} />
       <Title>{title}</Title>
     </div>

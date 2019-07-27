@@ -41,18 +41,16 @@ const Text = styled.div`
   ${tw`text-black font-sans text-xl p-6 leading-normal`};
 `
 
+const TicketLink = styled.a`
+  ${tw`bg-blue-600 hover:bg-blue-500 uppercase text-center text-white font-bold py-2 px-4 rounded float-right md:w-auto w-full md:my-0 my-8`};
+`
+
 const TalkCard = ({ title, children, bg }) => (
   <Wrapper>
     <Title>{title}</Title>
     <Text>{children}</Text>
   </Wrapper>
 )
-
-const shouldDisplayTalk = talk =>
-  talk.talk_format === 'Talk (~30-45 minutes)' && talk.state === 'accepted' && talk.confirmed
-
-const shouldDisplayKeynote = keynote =>
-  keynote.talk_format === 'Keynote' && keynote.state === 'accepted' && keynote.confirmed
 
 const Schedule = ({ location }) => (
   <>
@@ -72,6 +70,7 @@ const Schedule = ({ location }) => (
           {schedule.map(talk => (
             <TalkCard key={talk.order} title={talk.title} link="">
               <strong>{talk.day} : {talk.time}</strong>
+              { talk.tickets && (<TicketLink href={talk.tickets} target="_blank">Buy Tickets</TicketLink>) }
               <br />
               <br />
               {talk.blurb}
