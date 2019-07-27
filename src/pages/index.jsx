@@ -6,12 +6,9 @@ import { About, Hero, Sponsors, SponsorsWrapper, SponsorCard, ProjectsWrapper, P
 import { SectionTitle } from '../elements'
 import schedule from '../data/schedule.json'
 
-const HeroHeroTitleWrapper = styled.div`
+const HeroTitleWrapper = styled.div`
   ${tw`absolute inset-x-0`};
   bottom: 4.5rem;
-  @media (min-width: 768px) {
-    bottom: 2.5rem;
-  }
 `
 
 const HeroTitle = styled.h1`
@@ -39,11 +36,11 @@ const Index = ({ location }) => (
     <Layout position="centered" location={location}>
       <Hero>
         <Wordmark />
-        <HeroHeroTitleWrapper>
+        <HeroTitleWrapper>
           <HeroTitle>
             September 6, 7 & 8 <br /> <span>The Studio Loft | Denver, CO</span>
           </HeroTitle>
-        </HeroHeroTitleWrapper>
+        </HeroTitleWrapper>
       </Hero>
 
       <Projects>
@@ -59,13 +56,17 @@ const Index = ({ location }) => (
 
       <Sponsors>
         <div style={tw`flex mb-4`}>
-          <SectionTitle color="#fffff6" bg="transparent" style={tw`flex-1 w-full`}>Sponsored By ― </SectionTitle>
+          <SectionTitle color="#fffff6" bg="#1f506e" style={tw`flex-1 w-full`}>
+            Sponsored By ―{' '}
+          </SectionTitle>
         </div>
       </Sponsors>
 
       <About>
         <div style={tw`flex mt-16`}>
-          <SectionTitle color="#fffff6" bg="rgba(35, 38, 43, 0.95);" style={tw`flex-1 w-full`}>About PyCO ― </SectionTitle>
+          <SectionTitle color="#fffff6" bg="rgba(35, 38, 43, 0.95);" style={tw`flex-1 w-full`}>
+            About PyCO ―{' '}
+          </SectionTitle>
         </div>
         <AboutDesc>
           PyColorado is a regional Python conference to bring together the community of Python users and developers in
