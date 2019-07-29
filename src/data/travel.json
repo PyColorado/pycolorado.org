@@ -1,0 +1,42 @@
+[
+  {
+    "name": "✈️ By Plane",
+    "description": [
+      "Denver International Airport (DEN) offers direct flights to many destinations worldwide. It serves as a hub for United and Frontier, so you'll likely find some good direct options on those airlines. We also have direct Jet Blue flights to/from Boston and New York City.",
+      "After arriving at DIA, you have a couple options for making your way to downtown Denver:",
+      "🚈 Ride the A-line Light Rail to Union Station ($10.50 each way, runs every 15 minutes during peak hours, and every 30 minutes off peak). <a target=\"_blank\" href=\"http://www3.rtd-denver.com/schedules/getSchedule.action?routeType=32&routeId=A&serviceType=4\">Full Schedule</a>",
+      "🚗 Lyft, Uber, and local taxi companies all operate at the airport.  A Lyft/Uber runs about $40.",
+      "Rental cars are also available, although we've worked hard to make PyColorado a public transit + walking friendly event."
+    ]
+  },
+  {
+    "name": "🚂 By Train",
+    "description": [
+      "Union Station serves as the transportation hub for Denver and the surrounding cities. For a more authentic arrival to Denver (perhaps as a gold miner seeking fame and fortune would have), you can take the California Zephyr Amtrak that links Sacramento & Chicago by way of the <a target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Denver\">Queen City of the West</a>.",
+      "Denver has several light rail lines that service Golden, Arvada, Littleton, and South Denver. These lines all converge on Union Station. See the <a target=\"_blank\" href=\"http://www.rtd-denver.com/Fares.shtml#fare-zones\">full service map here</a>."
+    ]
+  },
+  {
+    "name": "🚲 By Bicycle (or Scooter)",
+    "description": [
+      "Denver's bicycle infrastructure has improved by leaps and bounds over the last several years.  Dedicated bike lanes are available on 14th, 15th, 18th, Lawrence, Arapahoe, Champa, Welton, and Glenarm streets.  <a target=\"_blank\" href=\"https://www.denvergov.org/content/dam/denvergov/Portals/708/documents/2019-Denver-Bike-Map.pdf\">See full bike map here</a>.",
+      "Denver also has a number of bike (B-Cycle), e-bike (Jump), and scooter (Razor, Lime, Bird, Lyft, Spin) sharing programs."
+    ]
+  },
+  {
+    "name": "🏃 Getting Around",
+    "description": [
+      "PyColorado is being held at The Studio Loft, located at <a target=\"_blank\" href=\"https://goo.gl/maps/594nd5cvm45aJznY8\">980 14th St, Denver, CO 80202</a>. One of the big benefits to this amazing venue is the proximity to public transportation and the ease in which attendees can both attend the conference, and enjoy our fair city.",
+      "Downtown Denver has free buses that run 24/7 between Union Station and Civic Center Station on 16th and 18th streets.",
+      "Lyft and Uber both operate in the city, and it's easy to get a ride at most any time of day.",
+      "See above for bicycle and scooter options."
+    ]
+  },
+  {
+    "name": "🛏️ Where to Stay",
+    "description": [
+      "The Curtis Hotel (a Hilton property) is just across the street from the conference venue. A few other hotels within 1 block include Hotel Teatro, Four Seasons, Aloft, and the Embassy Suites. There are many other hotels within walking distance including a variety of big chain and boutique offerings.",
+      "Airbnb is alive and well in Denver.  You'll find a variety of properties available both in the heart of the city and further out in the neighborhoods."
+    ]
+  }
+]

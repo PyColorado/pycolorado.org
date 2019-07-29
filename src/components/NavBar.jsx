@@ -186,6 +186,10 @@ class NavBar extends Component {
         path: '/schedule',
       },
       {
+        name: 'Getting Here',
+        path: '/travel',
+      },
+      {
         name: 'Code of Conduct',
         path: '/code-of-conduct',
       },
