@@ -8,6 +8,7 @@
     "speaker": "Chris Luiz",
     "blurb": "This workshop delivers value for beginners, web developers, and data scientists via an intro to the Python scientific and data analysis stack, Flask, data acquisition/processing, and a means to knit them together. It is widely accessible and touches on several interests of the community.",
     "linkedin_profile": "https://www.linkedin.com/in/christopher-luiz/",
+    "twitter_handle": "@CRLuiz",
     "headshot": "luiz_headshot.jpeg",
     "tickets": "https://ti.to/pycolorado/pycolorado-2019/with/lxkvhwrpxmc"
   },
@@ -20,6 +21,7 @@
     "speaker": "Uche Ogbuji",
     "blurb": "Python developers should learn effective use of the iterator protocol when crunching large datasets. The lineage of such techniques extends to Python 3\u2019s asyncio, valuable in boosting network applications. This workshop progresses from a firm grounding in iterators through generators & asyncio.",
     "linkedin_profile": "https://www.linkedin.com/in/ucheogbuji/",
+    "twitter_handle": "@uogbuji",
     "headshot": "ogbuji_headshot.jpeg",
     "tickets": "https://ti.to/pycolorado/pycolorado-2019/with/d6waubmhais"
   },
@@ -32,6 +34,7 @@
     "speaker": "Ewa Jodlowska",
     "blurb": "What brought you here? The uniqueness of each of our stories is what makes our community remarkable. This talk will take us through some of those remarkable features and how the Python Software Foundation plays a role.",
     "linkedin_profile": "https://www.linkedin.com/in/ewa-jodlowska-39810611/",
+    "twitter_handle": "@ewa_jodlowska",
     "headshot": "jodlowska_headshot.jpeg"
   },
   {
@@ -43,6 +46,7 @@
     "speaker": "Rami Chowdhury",
     "blurb": "Building software is a team sport, we\u2019re told. Yet it\u2019s cooperation that makes teams work, and without empathy we can\u2019t cooperate. This talk looks at adding care to our code and raising the bar beyond \"just come talk to me if you have a problem\".",
     "linkedin_profile": "https://www.linkedin.com/in/ramichowdhury/",
+    "twitter_handle": "@necaris",
     "headshot": "chowdhury_headshot.jpeg"
   },
   {
@@ -54,6 +58,7 @@
     "speaker": "Lynn Root",
     "blurb": "Everyone\u2019s talking about it. Everyone\u2019s using it. But most likely, they\u2019re doing it wrong, just like we did.\n\nBy building a simplified chaos monkey service, we will walk through how to create a good foundation for an asyncio-based service, including graceful shutdowns, proper exception handling, and testing asynchronous code. We\u2019ll get into the hairier topics as well, covering topics like working with synchronous code, debugging and profiling, and working with threaded code. We\u2019ll learn how to approach asynchronous and concurrent programming with Python\u2019s asyncio library, take away some best practices, and learn what pitfalls to avoid.",
     "linkedin_profile": "https://www.linkedin.com/in/lynnroot/",
+    "twitter_handle": "@roguelynn",
     "headshot": "root_headshot.jpeg"
   },
   {
@@ -65,6 +70,7 @@
     "speaker": "Moshe Zadka",
     "blurb": "The strengths and weaknesses of Python lend themselves to a different style of object oriented programming. By accepting several constraints on how we design and implement classes, we make our code more robust, more testable, and easier to adapt to changing circumstances",
     "linkedin_profile": "https://www.linkedin.com/in/moshezadka/",
+    "twitter_handle": "@moshezadka",
     "headshot": "zadka_headshot.jpg"
   },
   {
@@ -76,6 +82,7 @@
     "speaker": "Andrew Vaccaro",
     "blurb": "Python is quickly becoming the de-facto language of data science. Pandas is one of the most popular libraries for managing and transforming data, but many users are unaware of strategies to tune pandas for performance. Simple changes can greatly speed up data processing when applied correctly.",
     "linkedin_profile": "https://www.linkedin.com/in/andrew-vaccaro-510187103/",
+    "twitter_handle": null,
     "headshot": "vaccaro_headshot.jpeg"
   },
   {
@@ -87,6 +94,7 @@
     "speaker": "Jordan Hagan",
     "blurb": "Poorly written SQL and Python can make data extraction and manipulation tedious and painful. Streamlined processes utilizing SQL best practices will save hours of frustration. My goal is to teach attendees proven SQL methodologies and what python tools to use when.",
     "linkedin_profile": "https://www.linkedin.com/in/jordanhhagan/",
+    "twitter_handle": "@JtotheHagan",
     "headshot": "hagan_headshot.jpg"
   },
   {
@@ -98,6 +106,7 @@
     "speaker": "Gabriel Boorse",
     "blurb": "Puzzling over performance problems in production? Baffling backend bugs bending your brain? Unleash a plague of Locusts on your web app to devour performance problems, permanently! In this talk, you will learn how to leverage Locust for load testing RESTful services and more.",
     "linkedin_profile": "https://www.linkedin.com/in/gabrielboorse/",
+    "twitter_handle": "@gnboorse",
     "headshot": "boorse_headshot.jpeg"
   },
   {
@@ -109,6 +118,7 @@
     "speaker": "Kristie Wirth",
     "blurb": "Learn how my workplace manages to analyze dozens of concurrent A/B tests with millions of data points! I\u2019ll discuss our previous manual analysis process, some things that have changed, and do a down-to-earth walkthrough of how you too can use Python to automate analyzing your tests.",
     "linkedin_profile": "https://www.linkedin.com/in/kristiewirth/",
+    "twitter_handle": null,
     "headshot": "wirth_headshot.jpeg"
   },
   {
@@ -120,6 +130,7 @@
     "speaker": "Flavia Bastos",
     "blurb": "In this talk, we will explore what gRPC is and its application in web development. We will walk through an implementation of a Python server and a JS client communicating via gRPC.",
     "linkedin_profile": "https://www.linkedin.com/in/flavia-bastos-developer/",
+    "twitter_handle": "@FlaSustenido",
     "headshot": "bastos_headshot.jpeg"
   },
   {
@@ -131,6 +142,7 @@
     "speaker": "William Cox",
     "blurb": "Dask is a light-weight, Pythonic, library for doing distributed computation. I\u2019ll talk about how we use it to run machine learning forecasting jobs, and how the library might benefit your machine learning or data science work.",
     "linkedin_profile": "https://www.linkedin.com/in/williamcox/",
+    "twitter_handle": "@gallamine",
     "headshot": "cox_headshot.jpeg"
   },
   {
@@ -142,6 +154,7 @@
     "speaker": "Ashton Honnecke",
     "blurb": "Does your Python environment look like Randall Munroe's (of XKCD fame) Python environment superfund site? (https://xkcd.com/1987/)\n\nWhat would happen to your sprint if your laptop got hit by a bus?\n\nHow can you mitigate that?",
     "linkedin_profile": "https://www.linkedin.com/in/ashtonhonnecke/",
+    "twitter_handle": null,
     "headshot": "honnecke_headshot.jpeg"
   },
   {
@@ -153,6 +166,7 @@
     "speaker": "Joseph Willi",
     "blurb": "Ever struggle with finding methods to present data visualizations and/or results to non-technical audiences in a coherent and engaging manner? In this talk, I\u2019ll detail how I overcame such a challenge by using Dash to build an interactive app for firefighters to use while testing rescue equipment.",
     "linkedin_profile": "https://www.linkedin.com/in/joseph-willi-38b7883b/",
+    "twitter_handle": null,
     "headshot": "willi_headshot.jpeg"
   },
   {
@@ -164,6 +178,7 @@
     "speaker": "Rachel Stephens",
     "blurb": "How does Python fit among programming languages? We\u2019ll start with a zoomed out view of programming language trends and then drill into Python specifically. Our goal is to explore where, why and how Python being used, and then discuss future opportunities and threats to the language.",
     "linkedin_profile": "https://www.linkedin.com/in/rachelstephens/",
+    "twitter_handle": "@rstephensme",
     "headshot": "stephens_headshot.jpeg"
   },
   {
@@ -175,6 +190,7 @@
     "speaker": "William Horton",
     "blurb": "It\u2019s 2019, and Moore\u2019s Law is dead. CPU performance is plateauing, but GPUs provide a chance for continued hardware performance gains, if you can structure your programs to make good use of them. In this talk you will learn how to speed up your Python programs using Nvidia\u2019s CUDA platform.",
     "linkedin_profile": "https://www.linkedin.com/in/wdhorton/",
+    "twitter_handle": "@hortonhearsafoo",
     "headshot": "horton_headshot.jpeg"
   },
   {
@@ -186,6 +202,7 @@
     "speaker": "Dustin Ingram",
     "blurb": "In this talk, we\u2019ll discuss the advantages and disadvantages to a static type system, as well as recent efforts to introduce static typing to Python via optional \u201ctype hints\u201d and various tools to aid in adding types to Python code.",
     "linkedin_profile": "https://www.linkedin.com/in/dustingram/",
+    "twitter_handle": "@di_codes",
     "headshot": "ingram_headshot.png"
   },
   {
@@ -197,6 +214,7 @@
     "speaker": "Paul Everitt",
     "blurb": "\u201cCome for the language, stay for the community.\u201d The Python community started in 1994 at a NIST workshop in Maryland. What was the world of Python like in its first years? Did we have any clue whatsoever? A joke-focused tour of early Python, heavy on question-and-answer.",
     "linkedin_profile": "https://www.linkedin.com/in/paeveritt/",
+    "twitter_handle": "@paulweveritt",
     "headshot": "everitt_headshot.jpeg"
   }
 ]
