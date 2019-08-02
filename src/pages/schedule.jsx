@@ -1,7 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
-import { FiTwitter as TwitterIcon, FiLinkedin as LinkedInIcon, FiShare as ShareIcon } from 'react-icons/fi'
+import {
+  FiTwitter as TwitterIcon,
+  FiLinkedin as LinkedInIcon,
+  FiShare as ShareIcon,
+  FiCalendar as CalendarIcon,
+} from 'react-icons/fi'
 import { Layout } from '../components'
 import TopoBlueBG from '../images/topo-blue.svg'
 import { DividerTop, PageTitle, PageContent, Section } from '../elements'
@@ -90,6 +95,15 @@ const TalkCard = ({ type, title, children, bg }) => {
   )
 }
 
+const CalendarLink = () => (
+  <a
+    href="https://calendar.google.com/calendar/ical/pycolorado.org_c5bkg31mfpnrpf1q71ph13m2b8%40group.calendar.google.com/public/basic.ics"
+    title="Download full schedule as iCal (importable to Google Calendar)"
+  >
+    <CalendarIcon style={tw`ml-3 align-text-top`} />
+  </a>
+)
+
 const Schedule = ({ location }) => (
   <>
     <Layout showLogo theme="lighten" location={location}>
@@ -99,11 +113,10 @@ const Schedule = ({ location }) => (
           <PageTitle title="Schedule" />
 
           <SectionTitle>Scheduled Talks</SectionTitle>
-          <SectionSubTitle>September 7 - 8 | Sat, Sun 8:00 AM - 6 PM MDT</SectionSubTitle>
-          <p>
-            Enjoy talks covering Python Fundamentals, Web, Data Science, DevOps, People, and lots more. A detailed
-            schedule will be updated soon!
-          </p>
+          <SectionSubTitle>
+            September 7 - 8 | Sat, Sun 8:00 AM - 6 PM MDT <CalendarLink />
+          </SectionSubTitle>
+          <p>Enjoy talks covering Python Fundamentals, Web, Data Science, DevOps, People, and lots more.</p>
           <br />
           {schedule.map(talk => (
             <TalkCard key={talk.order} type={talk.type} title={talk.title} link="">
