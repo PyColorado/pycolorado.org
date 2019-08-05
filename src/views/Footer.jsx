@@ -53,7 +53,7 @@ const Footer = () => (
           <a className="fancy lighten" href="mailto:hello@pycolorado.org">
             Hello
           </a>
-          , or find us on{' '}
+          , find us on{' '}
           <a className="fancy lighten" href="https://twitter.com/pycolorado">
             Twitter
           </a>{' '}
@@ -61,6 +61,13 @@ const Footer = () => (
           <a className="fancy lighten" href="https://slack.pycolorado.org/">
             Slack
           </a>
+          {','}
+          <br />
+          or{' '}
+          <a className="fancy lighten" href="http://eepurl.com/goFWWL">
+            join our mailing list
+          </a>{' '}
+          for occasional updates.
         </ContactText>
       </Inner>
     </Contact>
