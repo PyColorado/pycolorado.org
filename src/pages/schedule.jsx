@@ -39,7 +39,7 @@ const Title = styled.div`
   background: #1f506e;
 `
 
-const Speaker = styled.a`
+const Speaker = styled.span`
   ${tw`text-black font-sans font-bold text-2xl mt-4 mb-0`};
 `
 
@@ -72,7 +72,12 @@ const LinkedIn = ({ speaker, url }) => {
   )
 }
 
-const Shareable = ({ speaker }) => {
+const Shareable = ({ type, speaker }) => {
+  if (!['Regular Talk', 'Keynote', 'Workshop'].includes(type)) {
+    // Only these types have shareables.
+    return null
+  }
+
   const lastName = speaker.split(' ').slice(-1)[0]
   const url = `/shareables/${lastName.toLowerCase()}_shareable.jpg`
   const alt = `Shareable Talk Image`
@@ -85,11 +90,17 @@ const Shareable = ({ speaker }) => {
 }
 
 const TalkCard = ({ type, title, children, bg }) => {
-  const formatted_title = type !== 'Regular Talk' ? type + ': ' + title : title
+  let formattedTitle
+
+  if (type !== null && type !== undefined && type !== 'Regular Talk') {
+    formattedTitle = `${type}: ${title}`
+  } else {
+    formattedTitle = title
+  }
 
   return (
     <Wrapper>
-      <Title>{formatted_title}</Title>
+      <Title>{formattedTitle}</Title>
       <Text>{children}</Text>
     </Wrapper>
   )
@@ -118,40 +129,24 @@ const Schedule = ({ location }) => (
           </SectionSubTitle>
           <p>Enjoy talks covering Python Fundamentals, Web, Data Science, DevOps, People, and lots more.</p>
           <br />
-          {schedule.map(talk => (
-            <TalkCard key={talk.order} type={talk.type} title={talk.title} link="">
+          {schedule.map((talk, idx) => (
+            // eslint-disable-next-line react/no-array-index-key
+            <TalkCard key={idx} type={talk.type} title={talk.title} link="">
               <strong>
                 {talk.day} : {talk.time}
               </strong>
               {talk.tickets && (
                 <TicketLink href={talk.tickets} target="_blank">
-                  Buy Tickets
+                  {talk.ticket_caption || 'Buy Tickets'}
                 </TicketLink>
               )}
-              <br />
-              <br />
-              {talk.blurb}
-              <br />
-              <br />
+              {talk.blurb && <div style={tw`my-10`} dangerouslySetInnerHTML={{ __html: talk.blurb }} />}
               <Speaker>{talk.speaker}</Speaker>
               {talk.twitter && <Twitter handle={talk.twitter} />}
               {talk.linkedin_profile && <LinkedIn speaker={talk.speaker} url={talk.linkedin_profile} />}
-              <Shareable speaker={talk.speaker} />
+              <Shareable type={talk.type} speaker={talk.speaker} />
             </TalkCard>
           ))}
-
-          {/* <SectionTitle>Keynotes</SectionTitle>
-          <SectionSubTitle />
-          <p />
-          {schedule.map(
-            keynote =>
-              shouldDisplayKeynote(keynote) && (
-                <TalkCard key={keynote.title} title={keynote.title} link="">
-                  {keynote.abstract}
-                  <Speaker>{keynote.name}</Speaker>
-                </TalkCard>
-              )
-          )} */}
         </Section>
       </PageContent>
     </Layout>
