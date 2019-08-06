@@ -44,7 +44,7 @@
   {
     "type": "Opening Remarks",
     "day": "Saturday",
-    "time": "9:10pm - 9:30pm",
+    "time": "9:10am - 9:30am",
     "title": "Welcome to PyColorado",
     "speaker": "Scott Vitale",
     "blurb": "Welcome to the inaugural PyColorado 2019. Hear about what to expect for the weekend and what fueled the drive to bring a regional Python conference to Colorado.",
@@ -293,7 +293,7 @@
     "type": "Closing Remarks",
     "day": "Sunday",
     "time": "5:20pm - 5:40pm",
-    "title": "Thanks for joining us",
+    "title": "Thank you for joining us",
     "speaker": "Frank Valcarcel",
     "blurb": "Summary, stats, and final thoughts on the inaugural PyColorado 2019.",
     "linkedin_profile": "https://www.linkedin.com/in/fvalcarcel"
