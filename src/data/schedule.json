@@ -2,7 +2,6 @@
   {
     "type": "Workshop",
     "day": "Friday",
-    "order": "1",
     "time": "9:00am - 12:30pm",
     "title": "Full Stack Data Science: Building Your First Smart Application ",
     "speaker": "Chris Luiz",
@@ -13,9 +12,14 @@
     "tickets": "https://ti.to/pycolorado/pycolorado-2019/with/lxkvhwrpxmc"
   },
   {
+    "type": "Break",
+    "title": "Lunch",
+    "day": "Friday",
+    "time": "12:30pm - 1:00pm"
+  },
+  {
     "type": "Workshop",
     "day": "Friday",
-    "order": "2",
     "time": "1:00pm - 4:30pm",
     "title": "Iterators, generators, coroutines and asyncio",
     "speaker": "Uche Ogbuji",
@@ -26,9 +30,30 @@
     "tickets": "https://ti.to/pycolorado/pycolorado-2019/with/d6waubmhais"
   },
   {
+    "title": "Opening Reception",
+    "day": "Friday",
+    "time": "6:00pm - 9:00pm",
+    "blurb": "Grab your badge to save time Saturday morning, and join us for light refreshments."
+  },
+  {
+    "title": "Registration Opens",
+    "day": "Saturday",
+    "time": "8:00am - 9:10am",
+    "blurb": "Coffee, tea, and pastries provided."
+  },
+  {
+    "type": "Opening Remarks",
+    "day": "Saturday",
+    "time": "9:10pm - 9:30pm",
+    "title": "Welcome to PyColorado",
+    "speaker": "Scott Vitale",
+    "blurb": "Welcome to the inaugural PyColorado 2019. Hear about what to expect for the weekend and what fueled the drive to bring a regional Python conference to Colorado.",
+    "linkedin_profile": "https://www.linkedin.com/in/svvitale",
+    "twitter": "https://twitter.com/svvitale"
+  },
+  {
     "type": "Keynote",
     "day": "Saturday",
-    "order": "3",
     "time": "9:30am - 10:10am",
     "title": "Our stories",
     "speaker": "Ewa Jodlowska",
@@ -40,9 +65,8 @@
   {
     "type": "Regular Talk",
     "day": "Saturday",
-    "order": "4",
     "time": "10:20am - 10:50am",
-    "title": "Developing With Empathy ",
+    "title": "Developing With Empathy",
     "speaker": "Rami Chowdhury",
     "blurb": "Building software is a team sport, we\u2019re told. Yet it\u2019s cooperation that makes teams work, and without empathy we can\u2019t cooperate. This talk looks at adding care to our code and raising the bar beyond \"just come talk to me if you have a problem\".",
     "linkedin_profile": "https://www.linkedin.com/in/ramichowdhury/",
@@ -51,32 +75,7 @@
   },
   {
     "type": "Regular Talk",
-    "day": "Sunday",
-    "order": "15",
-    "time": "1:20pm - 1:50pm",
-    "title": "Advanced asyncio: Solving Real-World Production Problems",
-    "speaker": "Lynn Root",
-    "blurb": "Everyone\u2019s talking about it. Everyone\u2019s using it. But most likely, they\u2019re doing it wrong, just like we did.\n\nBy building a simplified chaos monkey service, we will walk through how to create a good foundation for an asyncio-based service, including graceful shutdowns, proper exception handling, and testing asynchronous code. We\u2019ll get into the hairier topics as well, covering topics like working with synchronous code, debugging and profiling, and working with threaded code. We\u2019ll learn how to approach asynchronous and concurrent programming with Python\u2019s asyncio library, take away some best practices, and learn what pitfalls to avoid.",
-    "linkedin_profile": "https://www.linkedin.com/in/lynnroot/",
-    "twitter": "@roguelynn",
-    "headshot": "root_headshot.jpeg"
-  },
-  {
-    "type": "Regular Talk",
     "day": "Saturday",
-    "order": "6",
-    "time": "11:40am - 12:10pm",
-    "title": "Boring Object Orientation",
-    "speaker": "Moshe Zadka",
-    "blurb": "The strengths and weaknesses of Python lend themselves to a different style of object oriented programming. By accepting several constraints on how we design and implement classes, we make our code more robust, more testable, and easier to adapt to changing circumstances",
-    "linkedin_profile": "https://www.linkedin.com/in/moshezadka/",
-    "twitter": "@moshezadka",
-    "headshot": "zadka_headshot.jpg"
-  },
-  {
-    "type": "Regular Talk",
-    "day": "Saturday",
-    "order": "5",
     "time": "11:00am - 11:30am",
     "title": "Pandas May Be Slow, but Pandas Doesn't Have to Be",
     "speaker": "Andrew Vaccaro",
@@ -88,7 +87,23 @@
   {
     "type": "Regular Talk",
     "day": "Saturday",
-    "order": "7",
+    "time": "11:40am - 12:10pm",
+    "title": "Boring Object Orientation",
+    "speaker": "Moshe Zadka",
+    "blurb": "The strengths and weaknesses of Python lend themselves to a different style of object oriented programming. By accepting several constraints on how we design and implement classes, we make our code more robust, more testable, and easier to adapt to changing circumstances",
+    "linkedin_profile": "https://www.linkedin.com/in/moshezadka/",
+    "twitter": "@moshezadka",
+    "headshot": "zadka_headshot.jpg"
+  },
+  {
+    "type": "Break",
+    "title": "Lunch",
+    "day": "Saturday",
+    "time": "12:10pm - 2:00pm"
+  },
+  {
+    "type": "Regular Talk",
+    "day": "Saturday",
     "time": "2:10pm - 2:40pm",
     "title": "Optimizing SQL + Python Pipelines for Data Science",
     "speaker": "Jordan Hagan",
@@ -100,7 +115,6 @@
   {
     "type": "Regular Talk",
     "day": "Saturday",
-    "order": "8",
     "time": "2:50pm - 3:20pm",
     "title": "Unleashing the Eighth Plague: An Intro to Load Testing with Locust and Python",
     "speaker": "Gabriel Boorse",
@@ -110,21 +124,24 @@
     "headshot": "boorse_headshot.jpeg"
   },
   {
-    "type": "Regular Talk",
+    "type": "Break",
+    "title": "Coffee & Tea",
     "day": "Saturday",
-    "order": "9",
+    "time": "3:20pm - 3:50pm"
+  },
+  {
+    "type": "Lightning Talks",
+    "day": "Saturday",
     "time": "3:50pm - 4:20pm",
-    "title": "Stats Don't Have to Be Scary: Automatic a/b Test Analysis Using Python",
-    "speaker": "Kristie Wirth",
-    "blurb": "Learn how my workplace manages to analyze dozens of concurrent A/B tests with millions of data points! I\u2019ll discuss our previous manual analysis process, some things that have changed, and do a down-to-earth walkthrough of how you too can use Python to automate analyzing your tests.",
-    "linkedin_profile": "https://www.linkedin.com/in/kristiewirth/",
-    "twitter": null,
-    "headshot": "wirth_headshot.jpeg"
+    "title": "Ignite-Style",
+    "speaker": "Various Speakers",
+    "blurb": "5 minute talks given by a variety of speakers and inspired by the <a href=\"http://www.ignitetalks.io/\">Ignite Talk Series</a>. Each talk will be accompanied by 20 slides which auto-advance every 15 seconds. The format encourages a clear and direct message, and celebrates ad-lib thinking when speakers inevitably get off track.\n\nWant to present? Submit your idea up until AOE on September 3rd to be considered.",
+    "tickets": null,
+    "ticket_caption": "Submit your talk"
   },
   {
     "type": "Regular Talk",
     "day": "Saturday",
-    "order": "10",
     "time": "4:30pm - 5:00pm",
     "title": "Getting started with gRPC-Web and Python",
     "speaker": "Flavia Bastos",
@@ -136,7 +153,6 @@
   {
     "type": "Regular Talk",
     "day": "Saturday",
-    "order": "11",
     "time": "5:10pm - 5:40pm",
     "title": "Using Dask to Distribute Machine Learning Jobs",
     "speaker": "William Cox",
@@ -146,9 +162,25 @@
     "headshot": "cox_headshot.jpeg"
   },
   {
+    "type": "Welcome to Day 2!",
+    "title": "Coffee & Tea",
+    "day": "Sunday",
+    "time": "8:00am - 8:50am"
+  },
+  {
     "type": "Regular Talk",
     "day": "Sunday",
-    "order": "12",
+    "time": "9:00am - 9:20am",
+    "title": "The Zen of Python: Rocky Mountain Remix",
+    "speaker": "Uche Ogbuji",
+    "blurb": "A special and unique presentation...",
+    "linkedin_profile": "https://www.linkedin.com/in/ucheogbuji/",
+    "twitter": "@uogbuji",
+    "headshot": "ogbuji_headshot.jpeg"
+  },
+  {
+    "type": "Regular Talk",
+    "day": "Sunday",
     "time": "9:30am - 10:10am",
     "title": "Cleaning Up Your Python Environment Superfund Site",
     "speaker": "Ashton Honnecke",
@@ -160,7 +192,6 @@
   {
     "type": "Regular Talk",
     "day": "Sunday",
-    "order": "13",
     "time": "10:20am - 10:50am",
     "title": "Using Dash to Create Interactive Web Apps for Non-Technical Audiences",
     "speaker": "Joseph Willi",
@@ -172,7 +203,6 @@
   {
     "type": "Regular Talk",
     "day": "Sunday",
-    "order": "14",
     "time": "11:00am - 11:30am",
     "title": "WhyPy? Understanding Trends Driving the Usage of Python ",
     "speaker": "Rachel Stephens",
@@ -182,9 +212,25 @@
     "headshot": "stephens_headshot.jpeg"
   },
   {
+    "type": "Break",
+    "title": "Lunch",
+    "day": "Sunday",
+    "time": "11:30am - 1:20pm"
+  },
+  {
     "type": "Regular Talk",
     "day": "Sunday",
-    "order": "16",
+    "time": "1:20pm - 1:50pm",
+    "title": "Advanced asyncio: Solving Real-World Production Problems",
+    "speaker": "Lynn Root",
+    "blurb": "Everyone\u2019s talking about it. Everyone\u2019s using it. But most likely, they\u2019re doing it wrong, just like we did.\n\nBy building a simplified chaos monkey service, we will walk through how to create a good foundation for an asyncio-based service, including graceful shutdowns, proper exception handling, and testing asynchronous code. We\u2019ll get into the hairier topics as well, covering topics like working with synchronous code, debugging and profiling, and working with threaded code. We\u2019ll learn how to approach asynchronous and concurrent programming with Python\u2019s asyncio library, take away some best practices, and learn what pitfalls to avoid.",
+    "linkedin_profile": "https://www.linkedin.com/in/lynnroot/",
+    "twitter": "@roguelynn",
+    "headshot": "root_headshot.jpeg"
+  },
+  {
+    "type": "Regular Talk",
+    "day": "Sunday",
     "time": "2:00pm - 2:30pm",
     "title": "CUDA in Your Python: Effective Parallel Programming on the GPU",
     "speaker": "William Horton",
@@ -194,11 +240,16 @@
     "headshot": "horton_headshot.jpeg"
   },
   {
+    "type": "Break",
+    "title": "Coffee & Tea",
+    "day": "Sunday",
+    "time": "2:30pm - 3:00pm"
+  },
+  {
     "type": "Regular Talk",
     "day": "Sunday",
-    "order": "17",
     "time": "3:00pm - 3:30pm",
-    "title": "Static Typing in Python ",
+    "title": "Static Typing in Python",
     "speaker": "Dustin Ingram",
     "blurb": "In this talk, we\u2019ll discuss the advantages and disadvantages to a static type system, as well as recent efforts to introduce static typing to Python via optional \u201ctype hints\u201d and various tools to aid in adding types to Python code.",
     "linkedin_profile": "https://www.linkedin.com/in/dustingram/",
@@ -206,9 +257,25 @@
     "headshot": "ingram_headshot.png"
   },
   {
+    "type": "Regular Talk",
+    "day": "Saturday",
+    "time": "3:40pm - 4:10pm",
+    "title": "Stats Don't Have to Be Scary: Automatic a/b Test Analysis Using Python",
+    "speaker": "Kristie Wirth",
+    "blurb": "Learn how my workplace manages to analyze dozens of concurrent A/B tests with millions of data points! I\u2019ll discuss our previous manual analysis process, some things that have changed, and do a down-to-earth walkthrough of how you too can use Python to automate analyzing your tests.",
+    "linkedin_profile": "https://www.linkedin.com/in/kristiewirth/",
+    "twitter": null,
+    "headshot": "wirth_headshot.jpeg"
+  },
+  {
+    "type": "Break",
+    "title": "Coffee & Tea",
+    "day": "Sunday",
+    "time": "4:10pm - 4:30pm"
+  },
+  {
     "type": "Keynote",
     "day": "Sunday",
-    "order": "18",
     "time": "4:30pm - 5:10pm",
     "title": "Python 1994 ",
     "speaker": "Paul Everitt",
@@ -216,5 +283,19 @@
     "linkedin_profile": "https://www.linkedin.com/in/paeveritt/",
     "twitter": "@paulweveritt",
     "headshot": "everitt_headshot.jpeg"
+  },
+  {
+    "title": "Regional PyCon Announcements",
+    "day": "Sunday",
+    "time": "5:10pm - 5:20pm"
+  },
+  {
+    "type": "Closing Remarks",
+    "day": "Sunday",
+    "time": "5:20pm - 5:40pm",
+    "title": "Thank you for joining us",
+    "speaker": "Frank Valcarcel",
+    "blurb": "Summary, stats, and final thoughts on the inaugural PyColorado 2019.",
+    "linkedin_profile": "https://www.linkedin.com/in/fvalcarcel"
   }
 ]
