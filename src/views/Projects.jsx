@@ -70,8 +70,8 @@ const ProjectCard = ({ title, link, img, bg }) => (
         window.open(link, '_blank')
       }}
     >
-      <Image className="__image" bg={`/headshots/${img}`} />
-      <Title>{title}</Title>
+      {img && <Image className="__image" bg={`/headshots/${img}`} />}
+      {title && <Title>{title}</Title>}
     </div>
   </Wrapper>
 )

@@ -1,10 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
-import { Layout, Wordmark } from '../components'
+import { Layout, Wordmark, makeVolatile } from '../components'
 import { About, Hero, Sponsors, SponsorsWrapper, SponsorCard, ProjectsWrapper, Projects, ProjectCard } from '../views'
 import { SectionTitle } from '../elements'
 import schedule from '../data/schedule.json'
+
+const VolatileProjectCard = makeVolatile(ProjectCard)
 
 const HeroTitleWrapper = styled.div`
   ${tw`absolute inset-x-0`};
@@ -52,7 +54,13 @@ const Index = ({ location }) => (
         </div>
         <ProjectsWrapper>
           {featuredSpeakers.map(talk => (
-            <ProjectCard key={talk.order} title={talk.speaker} link={talk.linkedin_profile} img={talk.headshot} bg="" />
+            <VolatileProjectCard
+              key={talk.order}
+              title={talk.speaker}
+              link={talk.linkedin_profile}
+              img={talk.headshot}
+              bg=""
+            />
           ))}
         </ProjectsWrapper>
       </Projects>
