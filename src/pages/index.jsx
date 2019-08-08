@@ -24,12 +24,15 @@ const AboutDesc = styled.p`
   box-decoration-break: clone;
 `
 
-const speakersWithHeadshots = schedule.reduce((acc, currentValue) => {
-  if (currentValue.headshot) acc.push(currentValue)
-  return acc
-}, [])
+const speakersWithHeadshots = Object.values(
+  schedule.reduce((acc, currentValue) => {
+    if (currentValue.headshot) acc[currentValue.speaker] = currentValue
+    return acc
+  }, {})
+)
 
-const featuredSpeakers = speakersWithHeadshots.slice(0, 6)
+// Pseudo-Randomize the array order, and then get the first 6 speakers.
+const featuredSpeakers = speakersWithHeadshots.sort(() => Math.random() * 2 - 1).slice(0, 6)
 
 const Index = ({ location }) => (
   <>
