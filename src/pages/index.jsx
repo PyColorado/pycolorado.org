@@ -1,10 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
-import { Layout, Wordmark } from '../components'
+import { Layout, Wordmark, makeVolatile } from '../components'
 import { About, Hero, Sponsors, SponsorsWrapper, SponsorCard, ProjectsWrapper, Projects, ProjectCard } from '../views'
 import { SectionTitle } from '../elements'
 import schedule from '../data/schedule.json'
+
+const VolatileProjectCard = makeVolatile(ProjectCard)
 
 const HeroTitleWrapper = styled.div`
   ${tw`absolute inset-x-0`};
@@ -24,12 +26,15 @@ const AboutDesc = styled.p`
   box-decoration-break: clone;
 `
 
-const speakersWithHeadshots = schedule.reduce((acc, currentValue) => {
-  if (currentValue.headshot) acc.push(currentValue)
-  return acc
-}, [])
+const speakersWithHeadshots = Object.values(
+  schedule.reduce((acc, currentValue) => {
+    if (currentValue.headshot) acc[currentValue.speaker] = currentValue
+    return acc
+  }, {})
+)
 
-const featuredSpeakers = speakersWithHeadshots.slice(0, 6)
+// Pseudo-Randomize the array order, and then get the first 6 speakers.
+const featuredSpeakers = speakersWithHeadshots.sort(() => Math.random() * 2 - 1).slice(0, 6)
 
 const Index = ({ location }) => (
   <>
@@ -49,7 +54,13 @@ const Index = ({ location }) => (
         </div>
         <ProjectsWrapper>
           {featuredSpeakers.map(talk => (
-            <ProjectCard key={talk.order} title={talk.speaker} link={talk.linkedin_profile} img={talk.headshot} bg="" />
+            <VolatileProjectCard
+              key={talk.order}
+              title={talk.speaker}
+              link={talk.linkedin_profile}
+              img={talk.headshot}
+              bg=""
+            />
           ))}
         </ProjectsWrapper>
       </Projects>
