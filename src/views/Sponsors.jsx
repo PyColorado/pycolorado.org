@@ -16,7 +16,15 @@ const Wrapper = styled.a`
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
   &.summit {
-    ${tw`md:w-1/3 w-full h-32 p-8`};
+    ${tw`md:w-1/2 w-full h-32 p-8`};
+
+    &:hover {
+      ${tw`shadow-xl`}
+    }
+  }
+
+  &.peak {
+    ${tw`md:w-1/3 w-2/3 h-32 p-8`};
 
     &:hover {
       ${tw`shadow-xl`}
@@ -32,6 +40,7 @@ const Wrapper = styled.a`
   }
 
   &:hover {
+    background: #0D3C58;
     transform: translateY(-1px);
     transition: all 250ms ease-in;
   }
@@ -63,6 +72,18 @@ const Sponsors = ({ children }) => (
         </SponsorsWrapper>
 
         <SponsorsWrapper>
+          {sponsors.peak.map(sponsor => (
+            <SponsorCard
+              level="peak"
+              key={sponsor.name}
+              name={sponsor.name}
+              img={sponsor.img}
+              link={sponsor.link}
+            />
+          ))}
+        </SponsorsWrapper>
+
+        <SponsorsWrapper>
           {sponsors.front_range.map(sponsor => (
             <SponsorCard
               level="front-range"
@@ -74,9 +95,8 @@ const Sponsors = ({ children }) => (
           ))}
         </SponsorsWrapper>
 
-
-        <div style={tw`flex mt-8 md:p-24 p-2 text-center`}>
-          <p style={tw`z-50 text-white`}>
+        <div style={tw`flex mt-8 md:p-24 p-2`}>
+          <p style={tw`z-50 text-white mx-auto`}>
             Want to sponsor PyColorado? Check out our{' '}
             <a style={tw`underline text-white`} href="/PyColorado_2019_-_Sponsorship_Prospectus.pdf">
               Sponsorship Prospectus

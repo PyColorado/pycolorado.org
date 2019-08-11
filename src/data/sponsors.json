@@ -7,7 +7,18 @@
             "img": "cuttlesoft.svg"
         }
     ],
-    "peak": [],
+    "peak": [
+        {
+            "name": "Twitter",
+            "link": "https://twitter.com/",
+            "img": "twitter.png"
+        },
+        {
+            "name": "Heroku",
+            "link": "https://heroku.com/",
+            "img": "heroku.png"
+        }
+    ],
     "front_range": [
         {
             "name": "Occipital",
