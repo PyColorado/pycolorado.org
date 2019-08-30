@@ -57,7 +57,7 @@ const Twitter = ({ handle }) => {
 
   return (
     <a href={url} target="_blank" rel="noopener noreferrer" title={alt}>
-      <TwitterIcon size="1.5rem" style={tw`ml-3 align-text-top`} />
+      <TwitterIcon size="1.5em" style={tw`ml-3 align-text-bottom`} />
     </a>
   )
 }
@@ -67,7 +67,7 @@ const LinkedIn = ({ speaker, url }) => {
 
   return (
     <a href={url} target="_blank" rel="noopener noreferrer" title={alt}>
-      <LinkedInIcon size="1.5rem" style={tw`ml-3 align-text-top`} />
+      <LinkedInIcon size="1.5em" style={tw`ml-3 align-text-bottom`} />
     </a>
   )
 }
@@ -84,7 +84,7 @@ const Shareable = ({ type, speaker }) => {
 
   return (
     <a href={url} title={alt}>
-      <ShareIcon size="1.5rem" style={tw`ml-3 align-text-top`} />
+      <ShareIcon size="1.5em" style={tw`ml-3 align-text-bottom`} />
     </a>
   )
 }
