@@ -143,12 +143,12 @@
     "type": "Regular Talk",
     "day": "Saturday",
     "time": "4:30pm - 5:00pm",
-    "title": "Getting started with gRPC-Web and Python",
-    "speaker": "Flavia Bastos",
-    "blurb": "In this talk, we will explore what gRPC is and its application in web development. We will walk through an implementation of a Python server and a JS client communicating via gRPC.",
-    "linkedin_profile": "https://www.linkedin.com/in/flavia-bastos-developer/",
-    "twitter": "@FlaSustenido",
-    "headshot": "bastos_headshot.jpeg"
+    "title": "Managing Time like a Time Lord: It's bigger on the inside",
+    "speaker": "Joe Mann",
+    "blurb": "Time is one of those things that seems like it should be a simple. But unfortunately that is far from the case. With various timezones existing in the world, those timezones changing, and a host of other issues that arise with managing time, things become complicated very fast.\n\nThis talk will discuss some best practices for handling time and discuss several python libraries that make it easier.",
+    "linkedin_profile": "https://www.linkedin.com/in/josephsmann/",
+    "twitter": "@codinghipster",
+    "headshot": "mann_headshot.jpg"
   },
   {
     "type": "Regular Talk",
