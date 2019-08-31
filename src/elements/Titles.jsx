@@ -31,9 +31,13 @@ const Scale = styled.div`
   background: ${props => props.bg};
 `
 
-export const PageTitle = ({ title }) => (
+export const PageTitle = ({ title, showScale }) => (
   <>
     <PageTitleHeading>{title}</PageTitleHeading>
-    <Scale bg={`url(${scale}) no-repeat center center; background-size: contain;`} />
+    {showScale && <Scale bg={`url(${scale}) no-repeat center center; background-size: contain;`} />}
   </>
 )
+
+PageTitle.defaultProps = {
+  showScale: true,
+}
