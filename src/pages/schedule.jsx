@@ -23,7 +23,7 @@ const fadeInUpAnimation = css`
 `
 
 const Wrapper = styled.div`
-  ${tw`flex flex-row justify-start relative no-underline pb-8`};
+  ${tw`flex md:flex-row flex-col justify-start relative pb-8 `};
   animation: ${fadeInUpAnimation};
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   &:not(:first-child) {
@@ -37,7 +37,7 @@ const Wrapper = styled.div`
 `
 
 const Time = styled.div`
-  ${tw`w-1/6 text-blue-900 text-xl md:text-2xl font-serif font-bold`};
+  ${tw`md:w-1/6 w-full text-blue-900 text-2xl font-serif font-bold md:pb-0 pb-16`};
 
   span {
     ${tw`text-base font-bold`}
@@ -82,20 +82,20 @@ const LinkedIn = ({ speaker, url }) => {
 }
 
 const TalkCard = ({ type, time, title, location, children, bg }) => (
-    <Wrapper>
-      <Time>{time.split(' ')[0]} <span>{time.split(' ')[1]}</span></Time>
-      <div style={tw`w-5/6 text-lg align-text-bottom`}>
-        <div>
-          {type && `${type} | `}
-          <a href={location.link} target="_blank">
-            {location.name}
-          </a>
-        </div>
-        <Title>{title}</Title>
-        <Text>{children}</Text>
+  <Wrapper>
+    <Time>{time.split(' ')[0]} <span>{time.split(' ')[1]}</span></Time>
+    <div style={tw`w-5/6 text-lg align-text-bottom`}>
+      <div>
+        {type && `${type} | `}
+        <a href={location.link} target="_blank">
+          {location.name}
+        </a>
       </div>
-    </Wrapper>
-  )
+      <Title>{title}</Title>
+      <Text>{children}</Text>
+    </div>
+  </Wrapper>
+)
 
 const CalendarLink = () => (
   <a
