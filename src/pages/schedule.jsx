@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import styled, { keyframes, css } from 'styled-components'
 import tw from 'tailwind.macro'
 import { FiTwitter as TwitterIcon, FiLinkedin as LinkedInIcon, FiCalendar as CalendarIcon } from 'react-icons/fi'
+
+// Loaded as null when using server-side rendering
+import PrintProvider, { Print, NoPrint } from 'react-easy-print'
+
 import { Layout } from '../components'
 import TopoBlueBG from '../images/topo-blue.svg'
 import { DividerTop, PageTitle, PageContent, Section } from '../elements'
@@ -130,6 +134,44 @@ const ScheduleDay = styled.div`
   }
 `
 
+const ScheduleTable = styled.table`
+  ${tw`text-base text-left border-collapse text-sm`}
+
+  th, td {
+    padding: 15px;
+    text-align: left;
+  }
+`
+
+const PrintedSchedule = ({ schedule }) => (
+  <ScheduleTable>
+    <thead style={tw`border-b border-solid border-gray-200`}>
+      <tr>
+        <th style={tw`w-1/8`}>Day</th>
+        <th style={tw`w-1/8`}>Time</th>
+        <th style={tw`w-3/4`}>Event</th>
+      </tr>
+    </thead>
+    <tbody>
+      {schedule.map(talk => (
+        <tr style={tw`h-4`}>
+          <td>{talk.day}</td>
+          <td>{talk.time}</td>
+          <td>
+            {/* <div style={tw`text-sm`}>{talk.type}</div> */}
+            <div style={tw`font-bold`}>{talk.title}</div>
+            <div style={tw`text-sm`}>{talk.blurb}</div>
+            <div style={tw`text-sm font-bold`}>
+              <br />
+              {talk.speaker}
+            </div>
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </ScheduleTable>
+)
+
 class Schedule extends Component {
   constructor(props) {
     super(props)
@@ -160,8 +202,6 @@ class Schedule extends Component {
     window.addEventListener('scroll', this.handleScroll)
   }
 
-  // componentDidUpdate() {}
-
   handleScroll() {
     this.setState({ scroll: window.scrollY })
   }
@@ -177,10 +217,16 @@ class Schedule extends Component {
   }
 
   render() {
-    const { location } = this.props
-    const { scroll, top, contentBottom, currentDay, days } = this.state
+    // If we don't have a document, we're pre-rendering on the server and should
+    // skip rendering anything
+    if (typeof document !== 'object') {
+      return (<></>)
+    }
 
     const tabs = document.querySelector('.tabs')
+
+    const { location } = this.props
+    const { scroll, top, contentBottom, currentDay, days } = this.state
 
     const hasScrolled = scroll !== undefined && contentBottom !== undefined
     const isBelowSchedule = scroll < contentBottom
@@ -188,57 +234,64 @@ class Schedule extends Component {
 
     return (
       <>
-        <Layout showLogo theme="lighten" location={location}>
-          <DividerTop bg={`#fffff6 url(${TopoBlueBG}); background-size: cover;`} />
-          <PageContent height="auto">
-            <Section className="content-section" bg="white">
-              <PageTitle title="Schedule" showScale={false} />
+        <PrintProvider>
+          <Print printOnly name="printed-schedule">
+            <PrintedSchedule schedule={schedule} />
+          </Print>
+          <NoPrint force>
+            <Layout showLogo theme="lighten" location={location}>
+              <DividerTop bg={`#fffff6 url(${TopoBlueBG}); background-size: cover;`} />
+              <PageContent height="auto">
+                <Section className="content-section" bg="white">
+                  <PageTitle title="Schedule" showScale={false} />
 
-              {(!hasScrolled || isBelowSchedule) && (
-                <ScheduleDays className={isBelowDaySelection ? 'tabs fixed-nav' : 'tabs '}>
-                  {days.map(day => (
-                    <ScheduleDay
-                      key={day.day}
-                      className={currentDay === day.day ? 'active' : ''}
-                      style={tw`w-32`}
-                      onClick={() => this.handleUpdateCurrentDay(day.day)}
-                    >
-                      {day.label}
-                    </ScheduleDay>
-                  ))}
-                </ScheduleDays>
-              )}
+                  {(!hasScrolled || isBelowSchedule) && (
+                    <ScheduleDays className={isBelowDaySelection ? 'tabs fixed-nav' : 'tabs '}>
+                      {days.map(day => (
+                        <ScheduleDay
+                          key={day.day}
+                          className={currentDay === day.day ? 'active' : ''}
+                          style={tw`w-32`}
+                          onClick={() => this.handleUpdateCurrentDay(day.day)}
+                        >
+                          {day.label}
+                        </ScheduleDay>
+                      ))}
+                    </ScheduleDays>
+                  )}
 
-              {/* Placeholder to maintain height when ScheduleDays is fixed */}
-              {isBelowDaySelection && <div style={{ height: (tabs && tabs.offsetHeight) || 0 }} />}
+                  {/* Placeholder to maintain height when ScheduleDays is fixed */}
+                  {isBelowDaySelection && <div style={{ height: (tabs && tabs.offsetHeight) || 0 }} />}
 
-              {schedule
-                .filter(talk => talk.day === currentDay)
-                .map(talk => (
-                  <TalkCard
-                    key={`${talk.title}-${currentDay}-${talk.time}`}
-                    type={talk.type}
-                    time={talk.time}
-                    title={talk.title}
-                    location={talk.location}
-                  >
-                    {talk.blurb && <div dangerouslySetInnerHTML={{ __html: talk.blurb }} />}
+                  {schedule
+                    .filter(talk => talk.day === currentDay)
+                    .map(talk => (
+                      <TalkCard
+                        key={`${talk.title}-${currentDay}-${talk.time}`}
+                        type={talk.type}
+                        time={talk.time}
+                        title={talk.title}
+                        location={talk.location}
+                      >
+                        {talk.blurb && <div dangerouslySetInnerHTML={{ __html: talk.blurb }} />}
 
-                    <div style={tw`my-6`}>
-                      <Speaker>{talk.speaker}</Speaker>
-                      {talk.twitter && <Twitter handle={talk.twitter} />}
-                      {talk.linkedin_profile && <LinkedIn speaker={talk.speaker} url={talk.linkedin_profile} />}
-                      {talk.tickets && (
-                        <TicketLink href={talk.tickets} target="_blank">
-                          {talk.ticket_caption || 'Purchase Ticket'}
-                        </TicketLink>
-                      )}
-                    </div>
-                  </TalkCard>
-                ))}
-            </Section>
-          </PageContent>
-        </Layout>
+                        <div style={tw`my-6`}>
+                          <Speaker>{talk.speaker}</Speaker>
+                          {talk.twitter && <Twitter handle={talk.twitter} />}
+                          {talk.linkedin_profile && <LinkedIn speaker={talk.speaker} url={talk.linkedin_profile} />}
+                          {talk.tickets && (
+                            <TicketLink href={talk.tickets} target="_blank">
+                              {talk.ticket_caption || 'Purchase Ticket'}
+                            </TicketLink>
+                          )}
+                        </div>
+                      </TalkCard>
+                    ))}
+                </Section>
+              </PageContent>
+            </Layout>
+          </NoPrint>
+        </PrintProvider>
       </>
     )
   }
