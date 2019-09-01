@@ -23,7 +23,7 @@ const fadeInUpAnimation = css`
 `
 
 const Wrapper = styled.div`
-  ${tw`flex md:flex-row flex-col justify-start relative pb-8 `};
+  ${tw`flex md:flex-row flex-col justify-start relative pb-8`};
   animation: ${fadeInUpAnimation};
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   &:not(:first-child) {
@@ -83,13 +83,18 @@ const LinkedIn = ({ speaker, url }) => {
 
 const TalkCard = ({ type, time, title, location, children, bg }) => (
   <Wrapper>
-    <Time>{time.split(' ')[0]} <span>{time.split(' ')[1]}</span></Time>
+    <Time>
+      {time.split(' ')[0]} <span>{time.split(' ')[1]}</span>
+    </Time>
     <div style={tw`w-5/6 text-lg align-text-bottom`}>
       <div>
-        {type && `${type} | `}
-        <a href={location.link} target="_blank">
-          {location.name}
-        </a>
+        {type}
+        {type && location !== undefined && ` | `}
+        {location !== undefined && (
+          <a href={location.link} target="_blank">
+            {location.name}
+          </a>
+        )}
       </div>
       <Title>{title}</Title>
       <Text>{children}</Text>
@@ -107,11 +112,17 @@ const CalendarLink = () => (
 )
 
 const ScheduleDays = styled.div`
-  ${tw`flex flex-row -mx-16 px-16 border-b border-solid border-gray-300`};
+  ${tw`flex flex-row md:-mx-16 md:px-16 px-2 md:text-xl text-base bg-white border-b border-solid border-gray-300 z-10`};
+
+  &.fixed-nav {
+    position: fixed;
+    top: 0;
+    ${tw`shadow-sm lg:w-3/4 w-11/12 md:-mx-16 -mx-0 -ml-4`}
+  }
 `
 
 const ScheduleDay = styled.div`
-  ${tw`text-gray-700 text-center px-6 py-4 mr-4 cursor-pointer`};
+  ${tw`text-gray-700 text-center md:px-6 px-4 py-4 mr-4 cursor-pointer`};
   transition: all 0.2s ease;
   &.active,
   &:hover {
@@ -120,59 +131,96 @@ const ScheduleDay = styled.div`
 `
 
 class Schedule extends Component {
-  state = {
-    currentDay: 'Friday',
-    days: [
-      {
-        day: 'Friday',
-        label: '6 Fri',
-      },
-      {
-        day: 'Saturday',
-        label: '7 Sat',
-      },
-      {
-        day: 'Sunday',
-        label: '8 Sun',
-      },
-    ],
+  constructor(props) {
+    super(props)
+    this.state = {
+      currentDay: 'Friday',
+      days: [
+        {
+          day: 'Friday',
+          label: '6 Fri',
+        },
+        {
+          day: 'Saturday',
+          label: '7 Sat',
+        },
+        {
+          day: 'Sunday',
+          label: '8 Sun',
+        },
+      ],
+    }
+    this.handleScroll = this.handleScroll.bind(this)
+  }
+
+  componentDidMount() {
+    const el = document.querySelector('.tabs')
+    const section = document.querySelector('.content-section')
+    this.setState({ top: el.offsetTop - 2, contentBottom: section.offsetHeight })
+    window.addEventListener('scroll', this.handleScroll)
+  }
+
+  // componentDidUpdate() {}
+
+  handleScroll() {
+    this.setState({ scroll: window.scrollY })
+  }
+
+  handleUpdateCurrentDay(day) {
+    const section = document.querySelector('.content-section')
+
+    this.setState({ currentDay: day })
+
+    setTimeout(() => {
+      this.setState({ contentBottom: section.clientHeight })
+    }, 20)
   }
 
   render() {
     const { location } = this.props
-    const { currentDay, days } = this.state
+    const { scroll, top, contentBottom, currentDay, days } = this.state
+
+    const tabs = document.querySelector('.tabs')
+
+    const hasScrolled = scroll !== undefined && contentBottom !== undefined
+    const isBelowSchedule = scroll < contentBottom
+    const isBelowDaySelection = scroll > top
 
     return (
       <>
         <Layout showLogo theme="lighten" location={location}>
           <DividerTop bg={`#fffff6 url(${TopoBlueBG}); background-size: cover;`} />
           <PageContent height="auto">
-            <Section bg="white">
+            <Section className="content-section" bg="white">
               <PageTitle title="Schedule" showScale={false} />
 
-              <ScheduleDays>
-                {days.map(day => (
-                  <ScheduleDay
-                    className={currentDay === day.day ? 'active' : ''}
-                    style={tw`w-32`}
-                    onClick={() => this.setState({ currentDay: day.day })}
-                  >
-                    {day.label}
-                  </ScheduleDay>
-                ))}
-              </ScheduleDays>
+              {(!hasScrolled || isBelowSchedule) && (
+                <ScheduleDays className={isBelowDaySelection ? 'tabs fixed-nav' : 'tabs '}>
+                  {days.map(day => (
+                    <ScheduleDay
+                      key={day.day}
+                      className={currentDay === day.day ? 'active' : ''}
+                      style={tw`w-32`}
+                      onClick={() => this.handleUpdateCurrentDay(day.day)}
+                    >
+                      {day.label}
+                    </ScheduleDay>
+                  ))}
+                </ScheduleDays>
+              )}
+
+              {/* Placeholder to maintain height when ScheduleDays is fixed */}
+              {isBelowDaySelection && <div style={{ height: (tabs && tabs.offsetHeight) || 0 }} />}
 
               {schedule
                 .filter(talk => talk.day === currentDay)
                 .map(talk => (
-                  // eslint-disable-next-line react/no-array-index-key
                   <TalkCard
                     key={`${talk.title}-${currentDay}-${talk.time}`}
                     type={talk.type}
                     time={talk.time}
                     title={talk.title}
                     location={talk.location}
-                    link=""
                   >
                     {talk.blurb && <div dangerouslySetInnerHTML={{ __html: talk.blurb }} />}
 
@@ -182,7 +230,7 @@ class Schedule extends Component {
                       {talk.linkedin_profile && <LinkedIn speaker={talk.speaker} url={talk.linkedin_profile} />}
                       {talk.tickets && (
                         <TicketLink href={talk.tickets} target="_blank">
-                          {talk.ticket_caption || 'Buy Tickets'}
+                          {talk.ticket_caption || 'Purchase Ticket'}
                         </TicketLink>
                       )}
                     </div>

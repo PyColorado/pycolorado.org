@@ -133,10 +133,6 @@
     "type": "Break",
     "title": "Lunch",
     "day": "Saturday",
-    "location" : {
-      "name": "The Studio Loft",
-      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
-    },
     "time": "12:10 PM"
   },
   {
@@ -296,10 +292,6 @@
     "type": "Break",
     "title": "Lunch",
     "day": "Sunday",
-    "location" : {
-      "name": "The Studio Loft",
-      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
-    },
     "time": "11:30 AM"
   },
   {
@@ -359,7 +351,7 @@
   },
   {
     "type": "Regular Talk",
-    "day": "Saturday",
+    "day": "Sunday",
     "location" : {
       "name": "The Studio Loft",
       "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
