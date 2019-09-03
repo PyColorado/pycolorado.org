@@ -1,8 +1,12 @@
 [
   {
     "type": "Workshop",
+    "location" : {
+      "name": "Workability",
+      "link": "https://goo.gl/maps/eYfUGhgXTM8Wz5VV6"
+    },
     "day": "Friday",
-    "time": "9:00am - 12:30pm",
+    "time": "9:00 AM",
     "title": "Full Stack Data Science: Building Your First Smart Application ",
     "speaker": "Chris Luiz",
     "blurb": "This workshop delivers value for beginners, web developers, and data scientists via an intro to the Python scientific and data analysis stack, Flask, data acquisition/processing, and a means to knit them together. It is widely accessible and touches on several interests of the community.",
@@ -12,15 +16,13 @@
     "tickets": "https://ti.to/pycolorado/pycolorado-2019/with/lxkvhwrpxmc"
   },
   {
-    "type": "Break",
-    "title": "Lunch",
-    "day": "Friday",
-    "time": "12:30pm - 1:00pm"
-  },
-  {
     "type": "Workshop",
+    "location" : {
+      "name": "Workability",
+      "link": "https://goo.gl/maps/eYfUGhgXTM8Wz5VV6"
+    },
     "day": "Friday",
-    "time": "1:00pm - 4:30pm",
+    "time": "1:00 PM",
     "title": "Iterators, generators, coroutines and asyncio",
     "speaker": "Uche Ogbuji",
     "blurb": "Python developers should learn effective use of the iterator protocol when crunching large datasets. The lineage of such techniques extends to Python 3\u2019s asyncio, valuable in boosting network applications. This workshop progresses from a firm grounding in iterators through generators & asyncio.",
@@ -31,20 +33,36 @@
   },
   {
     "title": "Opening Reception",
+    "location" : {
+      "name": "The Commons on Champa",
+      "link": "https://goo.gl/maps/pu1Fn2UfExjnf41N6"
+    },
     "day": "Friday",
-    "time": "6:00pm - 9:00pm",
-    "blurb": "Grab your badge to save time Saturday morning, and join us for light refreshments.<br /><br />Location: <a href=\"https://goo.gl/maps/FGt6gm2qduLdx9Mg6\" target=\"_blank\">The Commons on Champa, 1245 Champa St, Denver, CO 80204</a>"
+    "time": "6:00 PM",
+    "blurb": "Grab your badge to save time Saturday morning, and join us for light refreshments."
   },
   {
     "title": "Registration Opens",
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
     "day": "Saturday",
-    "time": "8:00am - 9:10am",
+    "time": "8:00 AM",
     "blurb": "Coffee, tea, and pastries provided."
   },
   {
     "type": "Opening Remarks",
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
     "day": "Saturday",
-    "time": "9:10am - 9:30am",
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
+    "time": "9:10 AM",
     "title": "Welcome to PyColorado",
     "speaker": "Scott Vitale",
     "blurb": "Welcome to the inaugural PyColorado 2019. Hear about what to expect for the weekend and what fueled the drive to bring a regional Python conference to Colorado.",
@@ -54,7 +72,11 @@
   {
     "type": "Keynote",
     "day": "Saturday",
-    "time": "9:30am - 10:10am",
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
+    "time": "9:30 AM",
     "title": "Our stories",
     "speaker": "Ewa Jodlowska",
     "blurb": "What brought you here? The uniqueness of each of our stories is what makes our community remarkable. This talk will take us through some of those remarkable features and how the Python Software Foundation plays a role.",
@@ -65,7 +87,11 @@
   {
     "type": "Regular Talk",
     "day": "Saturday",
-    "time": "10:20am - 10:50am",
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
+    "time": "10:20 AM",
     "title": "Developing With Empathy",
     "speaker": "Rami Chowdhury",
     "blurb": "Building software is a team sport, we\u2019re told. Yet it\u2019s cooperation that makes teams work, and without empathy we can\u2019t cooperate. This talk looks at adding care to our code and raising the bar beyond \"just come talk to me if you have a problem\".",
@@ -76,7 +102,11 @@
   {
     "type": "Regular Talk",
     "day": "Saturday",
-    "time": "11:00am - 11:30am",
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
+    "time": "11:00 AM",
     "title": "Pandas May Be Slow, but Pandas Doesn't Have to Be",
     "speaker": "Andrew Vaccaro",
     "blurb": "Python is quickly becoming the de-facto language of data science. Pandas is one of the most popular libraries for managing and transforming data, but many users are unaware of strategies to tune pandas for performance. Simple changes can greatly speed up data processing when applied correctly.",
@@ -87,7 +117,11 @@
   {
     "type": "Regular Talk",
     "day": "Saturday",
-    "time": "11:40am - 12:10pm",
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
+    "time": "11:40 AM",
     "title": "Boring Object Orientation",
     "speaker": "Moshe Zadka",
     "blurb": "The strengths and weaknesses of Python lend themselves to a different style of object oriented programming. By accepting several constraints on how we design and implement classes, we make our code more robust, more testable, and easier to adapt to changing circumstances",
@@ -99,12 +133,16 @@
     "type": "Break",
     "title": "Lunch",
     "day": "Saturday",
-    "time": "12:10pm - 2:00pm"
+    "time": "12:10 PM"
   },
   {
     "type": "Regular Talk",
     "day": "Saturday",
-    "time": "2:10pm - 2:40pm",
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
+    "time": "2:10 PM",
     "title": "Optimizing SQL + Python Pipelines for Data Science",
     "speaker": "Jordan Hagan",
     "blurb": "Poorly written SQL and Python can make data extraction and manipulation tedious and painful. Streamlined processes utilizing SQL best practices will save hours of frustration. My goal is to teach attendees proven SQL methodologies and what python tools to use when.",
@@ -115,7 +153,11 @@
   {
     "type": "Regular Talk",
     "day": "Saturday",
-    "time": "2:50pm - 3:20pm",
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
+    "time": "2:50 PM",
     "title": "Unleashing the Eighth Plague: An Intro to Load Testing with Locust and Python",
     "speaker": "Gabriel Boorse",
     "blurb": "Puzzling over performance problems in production? Baffling backend bugs bending your brain? Unleash a plague of Locusts on your web app to devour performance problems, permanently! In this talk, you will learn how to leverage Locust for load testing RESTful services and more.",
@@ -127,12 +169,20 @@
     "type": "Break",
     "title": "Coffee & Tea",
     "day": "Saturday",
-    "time": "3:20pm - 3:50pm"
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
+    "time": "3:20 PM"
   },
   {
     "type": "Lightning Talks",
     "day": "Saturday",
-    "time": "3:50pm - 4:20pm",
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
+    "time": "3:50 PM",
     "title": "Ignite-Style",
     "speaker": "Various Speakers",
     "blurb": "5 minute talks given by a variety of speakers and inspired by the <a href=\"http://www.ignitetalks.io/\">Ignite Talk Series</a>. Each talk will be accompanied by 20 slides which auto-advance every 15 seconds. The format encourages a clear and direct message, and celebrates ad-lib thinking when speakers inevitably get off track.\n\nWant to present? Submit your idea up until AOE on September 3rd to be considered.",
@@ -142,7 +192,11 @@
   {
     "type": "Regular Talk",
     "day": "Saturday",
-    "time": "4:30pm - 5:00pm",
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
+    "time": "4:30 PM",
     "title": "Managing Time like a Time Lord: It's bigger on the inside",
     "speaker": "Joe Mann",
     "blurb": "Time is one of those things that seems like it should be a simple. But unfortunately that is far from the case. With various timezones existing in the world, those timezones changing, and a host of other issues that arise with managing time, things become complicated very fast.\n\nThis talk will discuss some best practices for handling time and discuss several python libraries that make it easier.",
@@ -153,7 +207,11 @@
   {
     "type": "Regular Talk",
     "day": "Saturday",
-    "time": "5:10pm - 5:40pm",
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
+    "time": "5:10 PM",
     "title": "Using Dask to Distribute Machine Learning Jobs",
     "speaker": "William Cox",
     "blurb": "Dask is a light-weight, Pythonic, library for doing distributed computation. I\u2019ll talk about how we use it to run machine learning forecasting jobs, and how the library might benefit your machine learning or data science work.",
@@ -162,15 +220,22 @@
     "headshot": "cox_headshot.jpeg"
   },
   {
-    "type": "Welcome to Day 2!",
     "title": "Coffee & Tea",
     "day": "Sunday",
-    "time": "8:00am - 8:50am"
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
+    "time": "8:00 AM"
   },
   {
     "type": "Regular Talk",
     "day": "Sunday",
-    "time": "9:00am - 9:20am",
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
+    "time": "9:00 AM",
     "title": "The Zen of Python: Rocky Mountain Remix",
     "speaker": "Uche Ogbuji",
     "blurb": "A special and unique presentation...",
@@ -181,7 +246,11 @@
   {
     "type": "Regular Talk",
     "day": "Sunday",
-    "time": "9:30am - 10:10am",
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
+    "time": "9:30 AM",
     "title": "Cleaning Up Your Python Environment Superfund Site",
     "speaker": "Ashton Honnecke",
     "blurb": "Does your Python environment look like Randall Munroe's (of XKCD fame) Python environment superfund site? (https://xkcd.com/1987/)\n\nWhat would happen to your sprint if your laptop got hit by a bus?\n\nHow can you mitigate that?",
@@ -192,7 +261,11 @@
   {
     "type": "Regular Talk",
     "day": "Sunday",
-    "time": "10:20am - 10:50am",
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
+    "time": "10:20 AM",
     "title": "Using Dash to Create Interactive Web Apps for Non-Technical Audiences",
     "speaker": "Joseph Willi",
     "blurb": "Ever struggle with finding methods to present data visualizations and/or results to non-technical audiences in a coherent and engaging manner? In this talk, I\u2019ll detail how I overcame such a challenge by using Dash to build an interactive app for firefighters to use while testing rescue equipment.",
@@ -203,7 +276,11 @@
   {
     "type": "Regular Talk",
     "day": "Sunday",
-    "time": "11:00am - 11:30am",
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
+    "time": "11:00 AM",
     "title": "WhyPy? Understanding Trends Driving the Usage of Python ",
     "speaker": "Rachel Stephens",
     "blurb": "How does Python fit among programming languages? We\u2019ll start with a zoomed out view of programming language trends and then drill into Python specifically. Our goal is to explore where, why and how Python being used, and then discuss future opportunities and threats to the language.",
@@ -215,12 +292,16 @@
     "type": "Break",
     "title": "Lunch",
     "day": "Sunday",
-    "time": "11:30am - 1:20pm"
+    "time": "11:30 AM"
   },
   {
     "type": "Regular Talk",
     "day": "Sunday",
-    "time": "1:20pm - 1:50pm",
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
+    "time": "1:20 PM",
     "title": "Advanced asyncio: Solving Real-World Production Problems",
     "speaker": "Lynn Root",
     "blurb": "Everyone\u2019s talking about it. Everyone\u2019s using it. But most likely, they\u2019re doing it wrong, just like we did.\n\nBy building a simplified chaos monkey service, we will walk through how to create a good foundation for an asyncio-based service, including graceful shutdowns, proper exception handling, and testing asynchronous code. We\u2019ll get into the hairier topics as well, covering topics like working with synchronous code, debugging and profiling, and working with threaded code. We\u2019ll learn how to approach asynchronous and concurrent programming with Python\u2019s asyncio library, take away some best practices, and learn what pitfalls to avoid.",
@@ -231,7 +312,11 @@
   {
     "type": "Regular Talk",
     "day": "Sunday",
-    "time": "2:00pm - 2:30pm",
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
+    "time": "2:00 PM",
     "title": "CUDA in Your Python: Effective Parallel Programming on the GPU",
     "speaker": "William Horton",
     "blurb": "It\u2019s 2019, and Moore\u2019s Law is dead. CPU performance is plateauing, but GPUs provide a chance for continued hardware performance gains, if you can structure your programs to make good use of them. In this talk you will learn how to speed up your Python programs using Nvidia\u2019s CUDA platform.",
@@ -243,12 +328,20 @@
     "type": "Break",
     "title": "Coffee & Tea",
     "day": "Sunday",
-    "time": "2:30pm - 3:00pm"
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
+    "time": "2:30 PM"
   },
   {
     "type": "Regular Talk",
     "day": "Sunday",
-    "time": "3:00pm - 3:30pm",
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
+    "time": "3:00 PM",
     "title": "Static Typing in Python",
     "speaker": "Dustin Ingram",
     "blurb": "In this talk, we\u2019ll discuss the advantages and disadvantages to a static type system, as well as recent efforts to introduce static typing to Python via optional \u201ctype hints\u201d and various tools to aid in adding types to Python code.",
@@ -258,8 +351,12 @@
   },
   {
     "type": "Regular Talk",
-    "day": "Saturday",
-    "time": "3:40pm - 4:10pm",
+    "day": "Sunday",
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
+    "time": "3:40 PM",
     "title": "Stats Don't Have to Be Scary: Automatic a/b Test Analysis Using Python",
     "speaker": "Kristie Wirth",
     "blurb": "Learn how my workplace manages to analyze dozens of concurrent A/B tests with millions of data points! I\u2019ll discuss our previous manual analysis process, some things that have changed, and do a down-to-earth walkthrough of how you too can use Python to automate analyzing your tests.",
@@ -271,12 +368,20 @@
     "type": "Break",
     "title": "Coffee & Tea",
     "day": "Sunday",
-    "time": "4:10pm - 4:30pm"
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
+    "time": "4:10 PM"
   },
   {
     "type": "Keynote",
     "day": "Sunday",
-    "time": "4:30pm - 5:10pm",
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
+    "time": "4:30 PM",
     "title": "Python 1994 ",
     "speaker": "Paul Everitt",
     "blurb": "\u201cCome for the language, stay for the community.\u201d The Python community started in 1994 at a NIST workshop in Maryland. What was the world of Python like in its first years? Did we have any clue whatsoever? A joke-focused tour of early Python, heavy on question-and-answer.",
@@ -287,12 +392,20 @@
   {
     "title": "Regional PyCon Announcements",
     "day": "Sunday",
-    "time": "5:10pm - 5:20pm"
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
+    "time": "5:10 PM"
   },
   {
     "type": "Closing Remarks",
     "day": "Sunday",
-    "time": "5:20pm - 5:40pm",
+    "location" : {
+      "name": "The Studio Loft",
+      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
+    },
+    "time": "5:20 PM",
     "title": "Thank you for joining us",
     "speaker": "Frank Valcarcel",
     "blurb": "Summary, stats, and final thoughts on the inaugural PyColorado 2019.",
