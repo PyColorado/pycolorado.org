@@ -131,9 +131,17 @@
   },
   {
     "type": "Break",
-    "title": "Lunch",
+    "title": "Diversity & Inclusion Lunch, Powered by Microsoft",
+    "location": {
+      "name": "Sculpture Park",
+      "link": "https://goo.gl/maps/esGvZLLWfaMkDqqg7"
+    },
     "day": "Saturday",
-    "time": "12:10 PM"
+    "time": "12:10 PM",
+    "blurb": "Diversity and Inclusion is at the heart of everything we do at Microsoft. We believe that given the opportunity, anyone, no matter what background has the potential for greatness.\n\nWe strive to create an environment that brings the power of diversity to life — where people with different backgrounds and experiences thrive in both their professional and personal lives.\n\nJoin our Diversity and Inclusion lunch on Saturday in the Sculpture Park with food trucks. Cloud Advocate Emily Freeman will host the session where we will watch a short video and talk about our D&I experiences. All we ask is that you bring an open mind, empathetic heart and empty stomach.",
+    "speaker": "Emily Freeman",
+    "linkedin_profile": "https://www.linkedin.com/in/editingemily/",
+    "twitter": "@editingemily"
   },
   {
     "type": "Regular Talk",
