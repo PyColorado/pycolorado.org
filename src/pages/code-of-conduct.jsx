@@ -10,25 +10,39 @@ const Coc = ({ location }) => (
       <PageContent height="auto">
         <Section bg="white">
           <PageTitle title="Code of Conduct" />
+          <h2>Need help?</h2>
+          <p>
+            <strong>Preferred!</strong> Call or text 720-789-PYCO (7926). This rings staff phones and alerts the CoC
+            Response Team via Slack.
+          </p>
+          <p>
+            Alternatively contact staff personnel in person or by email - Zoë Farmer (
+            <a href="mailto:zoe@dataleek.io">zoe@dataleek.io</a>) or Erin O'Connell (
+            <a href="mailto:Erinocon5@gmail.com">Erinocon5@gmail.com</a>). All staff are prepared to handle the incident
+            - just look for a crew member wearing a PyColorado STAFF shirt! All of our staff members are informed of the
+            code of conduct policy and guide for handling harassment at the conference.
+          </p>
+          <h2>Who We Are</h2>
           <p>
             PyColorado is a community conference. It serves as a place to learn, grow, network and collaborate in the
             developer community.
           </p>
           <p>
             <strong>We value the participation of each member of the Python community</strong> and want all attendees to
-            have an enjoyable and fulfilling experience. All attendees are expected to show respect and courtesy to other
-            attendees throughout the conference and at all conference events, whether officially part of PyColorado or not.
+            have an enjoyable and fulfilling experience. All attendees are expected to show respect and courtesy to
+            other attendees throughout the conference and at all conference events, whether officially part of
+            PyColorado or not.
           </p>
           <p>
-            To make clear what is expected, all staff, attendees, speakers, exhibitors, organizers, and volunteers at any
-            PyColorado event are required to conform to the following Code of Conduct. Organizers will enforce this code
-            throughout the event.
+            To make clear what is expected, all staff, attendees, speakers, exhibitors, organizers, and volunteers at
+            any PyColorado event are required to conform to the following Code of Conduct. Organizers will enforce this
+            code throughout the event.
           </p>
-          
+
           <h2>Our Standards</h2>
           <p>
-            PyColorado is dedicated to providing a positive conference experience for everyone, regardless of age, gender
-            identity and expression, sexual orientation, disability, physical appearance, body size, ethnicity,
+            PyColorado is dedicated to providing a positive conference experience for everyone, regardless of age,
+            gender identity and expression, sexual orientation, disability, physical appearance, body size, ethnicity,
             nationality, race, or religion (or lack thereof), education or socio-economic status.
           </p>
           <p>
@@ -70,30 +84,39 @@ const Coc = ({ location }) => (
             <br />
             Thank you for helping make this a welcoming, friendly event for all.
           </p>
-          
+
           <h2>Reporting</h2>
           <p>
-            If you feel this Code of Conduct has been violated, or have any other concerns, please contact a member of the
-            PyColorado staff (members will be wearing t-shirts that say <em>STAFF</em> on them).
-            <br/>
-            <br/>
-            <strong>You can also contact us by email at any time: </strong><a href="hello@pycolorado.org">hello@pycolorado.org</a>
-            <br/>
-            <br/>
-            {/* Please see CoC reporting procedures for more details. */}
-            Any Conference staff will be happy to help participants contact hotel/venue security or local law enforcement,
-            provide escorts, or assist anyone experiencing harassment to feel safe for the duration of the conference.
+            <strong>
+              If you feel this Code of Conduct has been violated, or have any other concerns, please immediately call or
+              text 720-789-PYCO (7926). This rings staff phones and alerts the CoC Response Team via Slack.
+            </strong>
+          </p>
+          <p>
+            Alternatively contact staff personnel in person or by email - Zoë Farmer (
+            <a href="mailto:zoe@dataleek.io">zoe@dataleek.io</a>) or Erin O'Connell (
+            <a href="mailto:Erinocon5@gmail.com">Erinocon5@gmail.com</a>). All staff are prepared to handle the incident
+            - just look for a crew member wearing a PyColorado STAFF shirt! All of our staff members are informed of the
+            code of conduct policy and guide for handling harassment at the conference.
+          </p>
+          <p>
+            Any Conference staff will be happy to help participants contact hotel/venue security or local law
+            enforcement, provide escorts, or assist anyone experiencing harassment to feel safe for the duration of the
+            conference.
+          </p>
+          <p>
+            Please see the <a href="/coc-reporting">comprehensive CoC reporting procedures</a> for more details.
           </p>
 
           <h2>Weapons Policy</h2>
           <p>
             No weapons are allowed at conference venues, including but not limited to explosives (including fireworks),
             guns, and large knives such as those used for hunting or display, as well as any other item used for the
-            purpose of causing injury or harm to others. Anyone seen in possession of one of these items will be asked to
-            leave immediately, and will only be allowed to return without the weapon. Attendees are further expected to
-            comply with all state and local laws on this matter.
+            purpose of causing injury or harm to others. Anyone seen in possession of one of these items will be asked
+            to leave immediately, and will only be allowed to return without the weapon. Attendees are further expected
+            to comply with all state and local laws on this matter.
           </p>
-          
+
           <h2>Scope</h2>
           <p>
             All PyColorado attendees and participants are subject to this code of conduct. This includes PyColorado
@@ -106,7 +129,7 @@ const Coc = ({ location }) => (
             staff (including volunteers) should not use sexualized clothing/uniforms/costumes, or otherwise create a
             sexualized environment.
           </p>
-          
+
           <h2>License</h2>
           <p>
             This Code of Conduct is based heavily on the{' '}
