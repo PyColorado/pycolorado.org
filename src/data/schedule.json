@@ -53,10 +53,6 @@
   },
   {
     "type": "Opening Remarks",
-    "location" : {
-      "name": "The Studio Loft",
-      "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
-    },
     "day": "Saturday",
     "location" : {
       "name": "The Studio Loft",
@@ -184,18 +180,19 @@
     "time": "3:20 PM"
   },
   {
-    "type": "Lightning Talks",
+    "type": "Regular Talk",
     "day": "Saturday",
     "location" : {
       "name": "The Studio Loft",
       "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
     },
     "time": "3:50 PM",
-    "title": "Ignite-Style",
-    "speaker": "Various Speakers",
-    "blurb": "5 minute talks given by a variety of speakers and inspired by the <a href=\"http://www.ignitetalks.io/\">Ignite Talk Series</a>. Each talk will be accompanied by 20 slides which auto-advance every 15 seconds. The format encourages a clear and direct message, and celebrates ad-lib thinking when speakers inevitably get off track.\n\nWant to present? Submit your idea up until AOE on September 3rd to be considered.",
-    "tickets": null,
-    "ticket_caption": "Submit your talk"
+    "title": "Stats Don't Have to Be Scary: Automatic a/b Test Analysis Using Python",
+    "speaker": "Kristie Wirth",
+    "blurb": "Learn how my workplace manages to analyze dozens of concurrent A/B tests with millions of data points! I\u2019ll discuss our previous manual analysis process, some things that have changed, and do a down-to-earth walkthrough of how you too can use Python to automate analyzing your tests.",
+    "linkedin_profile": "https://www.linkedin.com/in/kristiewirth/",
+    "twitter": null,
+    "headshot": "wirth_headshot.jpeg"
   },
   {
     "type": "Regular Talk",
@@ -358,19 +355,16 @@
     "headshot": "ingram_headshot.png"
   },
   {
-    "type": "Regular Talk",
+    "type": "Lightning Talks",
     "day": "Sunday",
     "location" : {
       "name": "The Studio Loft",
       "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
     },
     "time": "3:40 PM",
-    "title": "Stats Don't Have to Be Scary: Automatic a/b Test Analysis Using Python",
-    "speaker": "Kristie Wirth",
-    "blurb": "Learn how my workplace manages to analyze dozens of concurrent A/B tests with millions of data points! I\u2019ll discuss our previous manual analysis process, some things that have changed, and do a down-to-earth walkthrough of how you too can use Python to automate analyzing your tests.",
-    "linkedin_profile": "https://www.linkedin.com/in/kristiewirth/",
-    "twitter": null,
-    "headshot": "wirth_headshot.jpeg"
+    "title": "Ignite-Style",
+    "speaker": "Various Speakers",
+    "blurb": "5 minute talks given by a variety of speakers and inspired by the <a href=\"http://www.ignitetalks.io/\">Ignite Talk Series</a>. Each talk will be accompanied by 20 slides which auto-advance every 15 seconds. The format encourages a clear and direct message, and celebrates ad-lib thinking when speakers inevitably get off track.\n\nWant to present? Submit your idea up until AOE on September 3rd to be considered."
   },
   {
     "type": "Break",
