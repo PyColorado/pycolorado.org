@@ -256,12 +256,12 @@
       "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
     },
     "time": "9:30 AM",
-    "title": "Cleaning Up Your Python Environment Superfund Site",
-    "speaker": "Ashton Honnecke",
-    "blurb": "Does your Python environment look like Randall Munroe's (of XKCD fame) Python environment superfund site? (https://xkcd.com/1987/)\n\nWhat would happen to your sprint if your laptop got hit by a bus?\n\nHow can you mitigate that?",
-    "linkedin_profile": "https://www.linkedin.com/in/ashtonhonnecke/",
-    "twitter": null,
-    "headshot": "honnecke_headshot.jpeg"
+    "title": "Advanced asyncio: Solving Real-World Production Problems",
+    "speaker": "Lynn Root",
+    "blurb": "Everyone\u2019s talking about it. Everyone\u2019s using it. But most likely, they\u2019re doing it wrong, just like we did.\n\nBy building a simplified chaos monkey service, we will walk through how to create a good foundation for an asyncio-based service, including graceful shutdowns, proper exception handling, and testing asynchronous code. We\u2019ll get into the hairier topics as well, covering topics like working with synchronous code, debugging and profiling, and working with threaded code. We\u2019ll learn how to approach asynchronous and concurrent programming with Python\u2019s asyncio library, take away some best practices, and learn what pitfalls to avoid.",
+    "linkedin_profile": "https://www.linkedin.com/in/lynnroot/",
+    "twitter": "@roguelynn",
+    "headshot": "root_headshot.jpeg"
   },
   {
     "type": "Regular Talk",
@@ -307,12 +307,12 @@
       "link": "https://goo.gl/maps/MrMUm8BqsXvA8QYB6"
     },
     "time": "1:20 PM",
-    "title": "Advanced asyncio: Solving Real-World Production Problems",
-    "speaker": "Lynn Root",
-    "blurb": "Everyone\u2019s talking about it. Everyone\u2019s using it. But most likely, they\u2019re doing it wrong, just like we did.\n\nBy building a simplified chaos monkey service, we will walk through how to create a good foundation for an asyncio-based service, including graceful shutdowns, proper exception handling, and testing asynchronous code. We\u2019ll get into the hairier topics as well, covering topics like working with synchronous code, debugging and profiling, and working with threaded code. We\u2019ll learn how to approach asynchronous and concurrent programming with Python\u2019s asyncio library, take away some best practices, and learn what pitfalls to avoid.",
-    "linkedin_profile": "https://www.linkedin.com/in/lynnroot/",
-    "twitter": "@roguelynn",
-    "headshot": "root_headshot.jpeg"
+    "title": "Cleaning Up Your Python Environment Superfund Site",
+    "speaker": "Ashton Honnecke",
+    "blurb": "Does your Python environment look like Randall Munroe's (of XKCD fame) Python environment superfund site? (https://xkcd.com/1987/)\n\nWhat would happen to your sprint if your laptop got hit by a bus?\n\nHow can you mitigate that?",
+    "linkedin_profile": "https://www.linkedin.com/in/ashtonhonnecke/",
+    "twitter": null,
+    "headshot": "honnecke_headshot.jpeg"
   },
   {
     "type": "Regular Talk",
