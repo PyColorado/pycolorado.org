@@ -176,7 +176,7 @@ class Schedule extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      currentDay: 'Sunday',
+      currentDay: 'Friday',
       days: [
         {
           day: 'Friday',
